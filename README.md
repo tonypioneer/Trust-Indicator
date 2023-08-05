@@ -3,7 +3,7 @@
 1. [Project Description](#project-description)
 2. [Team Members and Roles](#team-members-and-roles)
 3. [Statement of Work](#statement-of-work)
-4. [Tech Stack](#tech-stack)
+4. [Getting Start](#getting-start)
 5. [Project Management Plan](#project-management-plan)
 6. [Team Charter](#team-charter)
 7. [Meeting Minutes](#meeting-minutes)
@@ -11,16 +11,16 @@
 9. [Decision Log](#decision-log)
 10. [Journey Log](#journey-log)
 11. [Conflict Resolution Protocol](#conflict-resolution-protocol)
-12. [Stakeholders List and Impact](#stakeholders-list-and-impact)
-13. [Testing Summary](#testing-summary)
-14. [User Manual](#user-manual)
-15. [Deliverables](#deliverables)
-16. [Future Improvements](#future-improvements)
-17. [Acknowledgements](#acknowledgements)
+12. [Testing Summary](#testing-summary)
+13. [User Manual](#user-manual)
+14. [Deliverables](#deliverables)
+15. [Future Improvements](#future-improvements)
+16. [Acknowledgements](#acknowledgements)
 ## Project Description
 - **Version:** 1.0.0, August, 2023 
 - **Developers:** COMP8715 Computing Project, Australian National University, Australia
 - **Introduction:**
+- **Stakeholders:**
 
 ## Team Members and Roles
 | UID      |     Name     |                                 Role |
@@ -32,7 +32,7 @@
 | u7342064 | Yifang Meng  |         Backend & Quality Assurance |
 | u7545864 | Zhaoyun Zhang  |         Backend & Machine Learning Instructor |
 ## Statement of Work
-## Tech Stack
+## Getting Start
 ## Project Management Plan
 ## Team Charter
 ## Meeting Minutes
