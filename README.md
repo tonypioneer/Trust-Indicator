@@ -33,7 +33,7 @@
 | u7545864 | Zhaoyun Zhang  |         Backend & Machine Learning Instructor |
 ## Statement of Work
 ## Getting Start
-See the [online documentation](https://anu365-my.sharepoint.com/:f:/g/personal/u7588748_anu_edu_au/EherAIyFdVpJl7jniN6ccIoBoEZCh7JOHbyaoWM-u1AL0A?e=BXVV6g) for references we referenced in the project.
+See the [online documentation](Documents/Reference/) for references we referenced in the project.
 
 We use [GitHub Discussions](https://github.com/YifangMeng/Trust-Indicator/discussions) as our forum, and Microsoft Teams for chat. These are great places to ask questions and advice from the community or to discuss projects.
 
