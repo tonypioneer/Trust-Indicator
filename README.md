@@ -7,19 +7,19 @@
 5. [Project Management Plan](#project-management-plan)
 6. [Team Charter](#team-charter)
 7. [Meeting Minutes](#meeting-minutes)
-8. [References](#references)
-9. [Decision Log](#decision-log)
-10. [Journey Log](#journey-log)
-11. [Conflict Resolution Protocol](#conflict-resolution-protocol)
-12. [Testing Summary](#testing-summary)
-13. [User Manual](#user-manual)
-14. [Deliverables](#deliverables)
-15. [Future Improvements](#future-improvements)
-16. [Acknowledgements](#acknowledgements)
+8. [Decision Log](#decision-log)
+9. [Journey Log](#journey-log)
+10. [Conflict Resolution Protocol](#conflict-resolution-protocol)
+11. [Testing Summary](#testing-summary)
+12. [User Manual](#user-manual)
+13. [Deliverables](#deliverables)
+14. [Future Improvements](#future-improvements)
+15. [Acknowledgements](#acknowledgements)
 ## Project Description
 - **Version:** 1.0.0, August, 2023 
 - **Developers:** COMP8715 Computing Project, Australian National University, Australia
 - **Introduction:**
+- **Tech Stack:**
 - **Stakeholders:**
 
 ## Team Members and Roles
@@ -33,13 +33,18 @@
 | u7545864 | Zhaoyun Zhang  |         Backend & Machine Learning Instructor |
 ## Statement of Work
 ## Getting Start
+See the [online documentation](https://anu365-my.sharepoint.com/:f:/g/personal/u7588748_anu_edu_au/EherAIyFdVpJl7jniN6ccIoBoEZCh7JOHbyaoWM-u1AL0A?e=dd9Npl) for references we referenced in the project.
+
+We use [GitHub Discussions](https://github.com/YifangMeng/Trust-Indicator/discussions) as our forum, and Microsoft Teams for chat. These are great places to ask questions and advice from the community or to discuss projects.
+
+For bugs, please raise an issue and follow the templates there.
+
 ## Project Management Plan
 ## Team Charter
 ## Meeting Minutes
 - [Client Meeting](https://anu365-my.sharepoint.com/:f:/g/personal/u7588748_anu_edu_au/Eq6IgCAa8dVIjRFBWsxaeekBk7TWpClMVORWujKmg-1dfQ?e=60o9Bq)
 - [Team Meeting](https://anu365-my.sharepoint.com/:f:/g/personal/u7588748_anu_edu_au/EhGHWpJKxANLrRiBJq9H1zQBK1ElE8BzLWEEF8JhKd_eUg?e=83NhqJ)
 - [Tutorial Meeting](https://anu365-my.sharepoint.com/:f:/g/personal/u7588748_anu_edu_au/EgVHrccSOZFGr6buEqXttygBsNPgKyMf9cuyJRvtRYq3-Q?e=qiAnDR)
-## References
 ## Decision Log
 This segment of our project documentation serves as a comprehensive record of all the key decisions made throughout the project lifecycle. 
 - Decision log link: 
@@ -62,8 +67,6 @@ This segment of our project documentation serves as a comprehensive record of al
     <p>After all parties have had a chance to express their concerns, the group should brainstorm potential solutions to the conflict.</p >
     <p>Team members are encouraged to offer suggestions and ideas, no matter how unconventional they may seem.</p >
     <p>The team should aim for a consensus-based solution, where all parties involved are in agreement.</p >
-
-## Stakeholders List and Impact
 ## Testing Summary
 ## User Manual
 Welcome to our product! In this [user manual](), you will find detailed guides and instructions on how to use our product. Whether you are a beginner or an experienced user, this manual will help you get started quickly and unleash the full potential of the product. Let's begin the journey together, exploring all the features and tips to enhance your user experience!
@@ -75,14 +78,14 @@ In the initial phase of project development, our focus is on implementing core f
 
 Our team will also maintain an open and flexible attitude. As the project progresses, we are ready to make adjustments and optimizations based on real-world conditions. We deeply understand that project development is an ongoing iterative process, not a one-time task.
 
-In the [future work document](), we have listed a continuous feature roadmap for accomplishing the future objectives. These functionalities represent our team's vision and mission, serving as the guiding direction and goals for our progress.
+In the [future work document](), we have listed a continuous feature roadmap for accomplishing future objectives. These functionalities represent our team's vision and mission, serving as the guiding direction and goals for our progress.
 
   
 During the implementation of these features, we will also prioritize team cohesion and effective communication. We will actively explore new solutions and ideas, conducting experiments and testing to ensure the stability and reliability of the functionalities. Additionally, we will focus on enhancing the user experience to ensure our product truly meets the needs of our users.
 ## Acknowledgements
-We would like to express our gratitude to all those who helped us during the completing of this project.
+We would like to express our gratitude to all those who helped us during the completion of this project.
 
-My deepest gratitude goes first and foremost to teaching team (Elena Williams & Charles Gretton) and client (Sabrina Caldwell). The teacher team provides a platform for us to communicate with customers in a timely manner and provide feedback and help to our requirements. Meanwhile, clients who play a vital role in the design of the project put forward a lot of instructive advice and useful suggestions for us.
+My deepest gratitude goes first and foremost to the teaching team (Elena Williams & Charles Gretton) and client (Sabrina Caldwell). The teacher team provides a platform for us to communicate with customers in a timely manner and provide feedback and help with our requirements. Meanwhile, clients who play a vital role in the design of the project put forward a lot of instructive advice and useful suggestions for us.
 
 We are also deeply indebted to those who use our web app and fill out the questionnaire. It was because of the bugs they found and the constructive comments they provided that the project came to a successful end.
 
