@@ -48,6 +48,7 @@ For bugs and feature requests, please [raise an issue](https://github.com/Yifang
 ## Decision Log
 This [Decision Log](Documents/Decision%20Log/) of our project documentation serves as a comprehensive record of all the key decisions made throughout the project lifecycle. 
 ## Journey Log
+In this [development guide](Documents/Journey%20Log), we will delve into each stage of the development process, from project planning, requirement gathering, design, coding, to testing and delivery. We will share best practices, tools, and methodologies to ensure the success of the project and the satisfaction of our clients.
 ## Conflict Resolution Protocol
 - **Purpose:**
 <p>The purpose of this document is to outline a well-defined protocol for handling conflicts within our Android development team. This protocol is intended to ensure that disagreements and issues are resolved efficiently and effectively, allowing us to maintain a healthy and collaborative work environment while focusing on the completion of our APP design and testing tasks.</p >
