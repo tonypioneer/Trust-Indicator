@@ -33,7 +33,7 @@
 | u7545864 | Zhaoyun Zhang  |         Backend & Machine Learning Instructor |
 ## Statement of Work
 ## Getting Start
-See the [online documentation](https://anu365-my.sharepoint.com/:f:/g/personal/u7588748_anu_edu_au/EherAIyFdVpJl7jniN6ccIoBoEZCh7JOHbyaoWM-u1AL0A?e=dd9Npl) for references we referenced in the project.
+See the [online documentation](https://anu365-my.sharepoint.com/:f:/g/personal/u7588748_anu_edu_au/EherAIyFdVpJl7jniN6ccIoBoEZCh7JOHbyaoWM-u1AL0A?e=BXVV6g) for references we referenced in the project.
 
 We use [GitHub Discussions](https://github.com/YifangMeng/Trust-Indicator/discussions) as our forum, and Microsoft Teams for chat. These are great places to ask questions and advice from the community or to discuss projects.
 
@@ -47,7 +47,7 @@ For bugs, please raise an issue and follow the templates there.
 - [Tutorial Meeting](https://anu365-my.sharepoint.com/:f:/g/personal/u7588748_anu_edu_au/EgVHrccSOZFGr6buEqXttygBsNPgKyMf9cuyJRvtRYq3-Q?e=qiAnDR)
 ## Decision Log
 This segment of our project documentation serves as a comprehensive record of all the key decisions made throughout the project lifecycle. 
-- Decision log link: 
+- Decision log link: https://anu365-my.sharepoint.com/:f:/g/personal/u7588748_anu_edu_au/EjXSoKZk8B9Kk_snEPcRTuYBwRR1IleFSUS0zdp3JUXf6w?e=386Iqq
 ## Journey Log
 ## Conflict Resolution Protocol
 - **Purpose:**
@@ -68,8 +68,9 @@ This segment of our project documentation serves as a comprehensive record of al
     <p>Team members are encouraged to offer suggestions and ideas, no matter how unconventional they may seem.</p >
     <p>The team should aim for a consensus-based solution, where all parties involved are in agreement.</p >
 ## Testing Summary
+In the [testing report](https://anu365-my.sharepoint.com/:f:/g/personal/u7588748_anu_edu_au/EoQEypqasGxKsyTzVoT5IqoBfvt-g4s_rW_IpXP2633DeQ?e=e9zYBH), we will highlight the key testing milestones, the test strategies employed, and the outcomes of our testing activities to ensure the quality and reliability of our Product/Software/Service.
 ## User Manual
-Welcome to our product! In this [user manual](), you will find detailed guides and instructions on how to use our product. Whether you are a beginner or an experienced user, this manual will help you get started quickly and unleash the full potential of the product. Let's begin the journey together, exploring all the features and tips to enhance your user experience!
+Welcome to our product! In this [user manual](), you will find detailed guides and instructions on how to use our product. Whether you are a beginner or an experienced user, this manual will help you get started quickly and unleash the full potential of the product. 
 ## Deliverables
 ## Future Improvements
 Considering future improvements and continuous optimization is crucial when developing a project. While our goal is to deliver a high-quality product at the current stage, we recognize that technology and market conditions are constantly changing. Therefore, we are willing to invest time and effort in thinking and planning for future enhancements.
