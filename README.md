@@ -37,7 +37,7 @@ See the [online documentation](Documents/Reference/) for references we reference
 
 We use [GitHub Discussions](https://github.com/YifangMeng/Trust-Indicator/discussions) as our forum, and Microsoft Teams for chat. These are great places to ask questions and advice from the community or to discuss projects.
 
-For bugs, please raise an issue and follow the templates there.
+For bugs and feature requests, please [raise an issue](https://github.com/YifangMeng/Trust-Indicator/issues/new/choose) and follow the templates there.
 
 ## Project Management Plan
 ## Team Charter
