@@ -79,7 +79,7 @@ In the initial phase of project development, our focus is on implementing core f
 
 Our team will also maintain an open and flexible attitude. As the project progresses, we are ready to make adjustments and optimizations based on real-world conditions. We deeply understand that project development is an ongoing iterative process, not a one-time task.
 
-In the [future work document](), we have listed a continuous feature roadmap for accomplishing future objectives. These functionalities represent our team's vision and mission, serving as the guiding direction and goals for our progress.
+In the [future work document](https://anu365-my.sharepoint.com/:f:/g/personal/u7588748_anu_edu_au/EvBFDx0jqfRKpdPKtsqGCjYBnJuhngdVBGx2K9eZBdczjQ?e=Cunmly), we have listed a continuous feature roadmap for accomplishing future objectives. These functionalities represent our team's vision and mission, serving as the guiding direction and goals for our progress.
 
   
 During the implementation of these features, we will also prioritize team cohesion and effective communication. We will actively explore new solutions and ideas, conducting experiments and testing to ensure the stability and reliability of the functionalities. Additionally, we will focus on enhancing the user experience to ensure our product truly meets the needs of our users.
