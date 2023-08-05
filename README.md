@@ -70,7 +70,7 @@ In this [development guide](Documents/Journey%20Log), we will delve into each st
 ## Testing Summary
 In the [testing report](Documents/Testing%20Summary), we will highlight the key testing milestones, the test strategies employed, and the outcomes of our testing activities to ensure the quality and reliability of our Product/Software/Service.
 ## User Manual
-Welcome to our product! In this [user manual](), you will find detailed guides and instructions on how to use our product. Whether you are a beginner or an experienced user, this manual will help you get started quickly and unleash the full potential of the product. 
+Welcome to our product! In this [user manual]() (we will update this document when the product is delivered), you will find detailed guides and instructions on how to use our product. Whether you are a beginner or an experienced user, this manual will help you get started quickly and unleash the full potential of the product. 
 ## Deliverables
 ## Future Improvements
 Considering future improvements and continuous optimization is crucial when developing a project. While our goal is to deliver a high-quality product at the current stage, we recognize that technology and market conditions are constantly changing. Therefore, we are willing to invest time and effort in thinking and planning for future enhancements.
