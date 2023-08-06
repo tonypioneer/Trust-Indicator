@@ -7,7 +7,7 @@
 5. [Project Management](#project-management)
 6. [Team Charter](#team-charter)
 7. [Meeting Minutes](#meeting-minutes)
-8. [Decision Log](#decision-log)
+8. [Decision Logs](#decision-logs)
 9. [Conflict Resolution Protocol](#conflict-resolution-protocol)
 10. [Testing Summary](#testing-summary)
 11. [User Manual](#user-manual)
@@ -64,8 +64,8 @@ This [document](Documents/Team%20Charter/Team%20Charter.md) elaborates on the te
 - [Client Meeting](Documents/Meeting%20Minutes/Client%20Meeting/)
 - [Team Meeting](Documents/Meeting%20Minutes/Team%20Meeting/)
 - [Tutorial Meeting](Documents/Meeting%20Minutes/Tutorial%20Meeting/)
-## Decision Log
-The Decision Log System is a tool designed to track and manage decisions made within a project or organization. By logging decisions, including the context, rationale, options considered, and outcomes, teams can improve transparency, responsibility, and learning. This [Decision Log](Documents/Decision%20Log/) of our project documentation serves as a comprehensive record of all the key decisions made throughout the project lifecycle. 
+## Decision Logs
+The Decision Log System is a tool designed to track and manage decisions made within a project or organization. By logging decisions, including the context, rationale, options considered, and outcomes, teams can improve transparency, responsibility, and learning. This [Decision Logs](Documents/Decision%20Logs/) of our project documentation serves as a comprehensive record of all the key decisions made throughout the project lifecycle. 
 
 ## Conflict Resolution Protocol
 - **Purpose:**
@@ -89,6 +89,14 @@ The Decision Log System is a tool designed to track and manage decisions made wi
 In the [testing report](Documents/Testing%20Summary), we will highlight the key testing milestones, the test strategies employed, and the outcomes of our testing activities to ensure the quality and reliability of our Product/Software/Service.
 ## User Manual
 Welcome to our product! In this [user manual]() (we will update this document when the product is delivered), you will find detailed guides and instructions on how to use our product. Whether you are a beginner or an experienced user, this manual will help you get started quickly and unleash the full potential of the product. 
+
+## Deliverables
+
+The project mainly has the following deliverables.
+
+- The website with Trust Indicator.
+- The source code of the project.
+- The documentation of the project.
 
 ## Future Improvements
 Considering future improvements and continuous optimization is crucial when developing a project. While our goal is to deliver a high-quality product at the current stage, we recognize that technology and market conditions are constantly changing. Therefore, we are willing to invest time and effort in thinking and planning for future enhancements.
