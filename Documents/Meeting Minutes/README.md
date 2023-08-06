@@ -9,3 +9,6 @@ This repository is dedicated to storing, organizing, and tracking the meeting mi
 `/team-meetings`: Contains minutes for internal team meetings.
 
 `/tutorial-meetings`: Contains minutes for tutorial sessions.
+
+## Template
+Please follow the template provided in [Meeting Minutes Template.md](./Meeting%Minutes%20Template.md) for all meeting minutes to maintain consistency.
