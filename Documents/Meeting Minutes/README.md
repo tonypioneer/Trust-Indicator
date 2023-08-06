@@ -11,4 +11,4 @@ This repository is dedicated to storing, organizing, and tracking the meeting mi
 `/tutorial-meetings`: Contains minutes for tutorial sessions.
 
 ## Template
-Please follow the template provided in [Meeting Minutes Template.md](./Meeting%Minutes%20Template.md) for all meeting minutes to maintain consistency.
+Please follow the template provided in [Meeting Minutes Template.md](./Meeting%20Minutes%20Template.md) for all meeting minutes to maintain consistency.
