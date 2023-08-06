@@ -19,7 +19,7 @@
 - **Version:** 1.0.0, August, 2023 
 - **Developers:** COMP8715 Computing Project, Australian National University, Australia
 - **Introduction:**
-- **Tech Stack:**
+- **Tech Stack:** [Tech Stack Documentation](Documents/Tech%20Stack/Tech%20Stack.md)
 - **Stakeholders:**
 
 ## Team Members and Roles
