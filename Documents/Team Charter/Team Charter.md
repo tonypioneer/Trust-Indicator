@@ -10,9 +10,11 @@ The team aims to achieve a fully functioning web-based application including a c
 ## **Team Structure** 
 
 Spokesperson: Yifang Meng
+
 Vice-Spokesperson: Vidhu Chaudhary
 
 **Technical Roles:**
+
 Lingxiu Cai - Frontend & Backend Developer
 
 Vidhu Chaudhary- Documentation Manager & Frontend Developer
