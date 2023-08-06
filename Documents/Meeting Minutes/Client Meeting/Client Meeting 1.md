@@ -1,48 +1,58 @@
-**Client Meeting 1**
+ # **Client Meeting 1**
 
-**Date/Time:** 31 July 2023, 4:00pm – 6:00pm
+## **Date/Time:** 
 
-**Location:** Hive, CSIT Building
+31 July 2023, 4:00pm – 6:00pm
 
-**Attendees:** Lingxiu Cai, Vidhu Chaudhary, Tony Chen, Song Han, Yifang Meng, Zhaoyun Zhang, Prof. Sabrina Caldwell
+## **Location:** 
 
-**Agenda:** Discuss the project details and gather insight about the expectations and requirements of the client.
+Hive, CSIT Building
 
-**Discussion:**
+## **Attendees:** 
 
-**Mission of the project:** Australian themed repository of images with trust indicators because the photos on the internet when uploaded don't have associated metadata.
+Lingxiu Cai, Vidhu Chaudhary, Tony Chen, Song Han, Yifang Meng, Zhaoyun Zhang, Prof. Sabrina Caldwell
 
-**Expectations/ Potential Deliverables:**
+## **Agenda:** 
 
-Photos.au – independent website domain
+Discuss the project details and gather insight about the expectations and requirements of the client.
 
-Registered members
+## **Discussion:**
 
-Gallery photos
+- **Mission of the project:**
 
-Collect metadata, example – metadata info [photo- no camera mentioned?]
+    Australian themed repository of images with trust indicators because the photos on the internet when uploaded don't have associated metadata.
 
-Short version
+- **Expectations/ Potential Deliverables:**
 
-Full version
+    Photos.au – independent website domain
 
-Symbol of trust
+    Registered members
 
-CC License – Creative Comments License:
+    Gallery photos
 
-: Open source – how to use images? CCBy attribute, CCByNC – No commercial use.
+    Collect metadata, example – metadata info [photo- no camera mentioned?]
 
-**Users:** People, JPEG, Researchers, GLAM Organisations: Galleries, Libraries, Archives, Museums
+    Short version
 
-**Types of Photographs:** Photographs, Modified images, AI – generated images.
+    Full version
 
-**Additional Features:**
+    Symbol of trust
 
-- Manipulation in images detection
+    CC License – Creative Comments License:
 
-- Linking other systems or social media websites
+    Open source – how to use images? CCBy attribute, CCByNC – No commercial use.
 
-**Action Items:**
+- **Users:** People, JPEG, Researchers, GLAM Organisations: Galleries, Libraries, Archives, Museums
+
+- **Types of Photographs:** Photographs, Modified images, AI – generated images.
+
+- **Additional Features:**
+
+  Manipulation in images detection
+
+  Linking other systems or social media websites
+
+## **Action Items:**
 
 | **Action** | **Constraints** | **Responsible Team Member** |
 | --- | --- | --- |
@@ -51,7 +61,7 @@ CC License – Creative Comments License:
 | Find photographs related to the project | | All team members |
 | Reminder for domain access | | Spokesperson – Yifang and Vidhu |
 
-**Notes:**
+## **Notes:**
 
 - Useful information/ metadata with photographs to be displayed to people. (Find metadata, collect, display important metadata)
 - Symbol set for trustworthiness. (Figure symbol set – feasible, artist statement + credibility)
