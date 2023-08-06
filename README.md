@@ -55,7 +55,8 @@ In managing our web API development project, we faced challenges such as increas
 - Chose GitHub Projects for task management and the GitHub Kanban workflow for our development process, aiming for seamless integration, simplicity, cost-effectiveness, and enhanced collaboration within the team.
 - Organize weekly catch-up meetings for code review before merging into the main branch to maintain code quality, ensuring that the code is readable, maintainable, efficient, and error-free.
 
-By focusing on integration, simplicity, and collaboration, we've positioned our team to work with greater agility and transparency, aligning our tooling and workflows with the specific needs and goals of our project. The full decision log can be accessed [here](Document/Decision%20Log/Tools%20for%20Project%20Management.md).
+By focusing on integration, simplicity, and collaboration, we've positioned our team to work with greater agility and transparency, aligning our tooling and workflows with the specific needs and goals of our project. The full decision log can be accessed [here](Documents/Decision%20Log/Tools%20for%20Project%20Management.md).
+
 
 ## Team Charter
 ## Meeting Minutes
