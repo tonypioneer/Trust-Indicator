@@ -63,7 +63,7 @@ By focusing on integration, simplicity, and collaboration, we've positioned our 
 - [Team Meeting](Documents/Meeting%20Minutes/Team%20Meeting/)
 - [Tutorial Meeting](Documents/Meeting%20Minutes/Tutorial%20Meeting/)
 ## Decision Log
-This [Decision Log](Documents/Decision%20Log/) of our project documentation serves as a comprehensive record of all the key decisions made throughout the project lifecycle. 
+The Decision Log System is a tool designed to track and manage decisions made within a project or organization. By logging decisions, including the context, rationale, options considered, and outcomes, teams can improve transparency, responsibility, and learning. This [Decision Log](Documents/Decision%20Log/) of our project documentation serves as a comprehensive record of all the key decisions made throughout the project lifecycle. 
 
 ## Conflict Resolution Protocol
 - **Purpose:**
