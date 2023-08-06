@@ -30,14 +30,14 @@ The project's objective is to offer consumers a reliable resource to improve the
 - **Stakeholders:**
 
 ## Team Members and Roles
-| UID      |     Name     |                                 Role |
+|UID|Name|Role|
 |:---------|:------------:|-------------------------------------:|
-| u7588748 | Lingxiu Cai  |                    Frontend & Backend Developer |
-| u7504537 |  Tony Chen   |                    Project Manager & CTO |
-| u7529732 |   Song Han   |         Frontend & DataBase Manager |
-| u7531066 | Vidhu Chaudhary | Documentation Manager & Frontend Developer|
-| u7342064 | Yifang Meng  |         Backend & Quality Assurance |
-| u7545864 | Zhaoyun Zhang  |         Backend & Machine Learning Instructor |
+|u7588748|Lingxiu Cai|Frontend & Backend Developer|
+|u7504537|Tony Chen|Project Manager & CTO|
+|u7529732|Song Han|Frontend & DataBase Manager|
+|u7531066|Vidhu Chaudhary|Documentation Manager & Frontend Developer|
+|u7342064|Yifang Meng|Backend & Quality Assurance|
+|u7545864|Zhaoyun Zhang|Backend & Machine Learning Instructor|
 ## Statement of Work
 ## Getting Start
 See the [online documentation](Documents/Reference/) for references we referenced in the project.
