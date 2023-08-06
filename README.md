@@ -58,6 +58,8 @@ By focusing on integration, simplicity, and collaboration, we've positioned our 
 
 
 ## Team Charter
+This [document](Documents/Team%20Charter/Team%20Charter.md) elaborates on the team's goals, structure, duties, norms, and protocols. It sets a clear direction and delineation for the team, aiding members in fostering mutual expectations and consensus. The primary aim of the team charter is to enhance team efficiency, bolster collaboration, and reduce misunderstandings and potential conflicts.
+
 ## Meeting Minutes
 - [Client Meeting](Documents/Meeting%20Minutes/Client%20Meeting/)
 - [Team Meeting](Documents/Meeting%20Minutes/Team%20Meeting/)
