@@ -114,7 +114,7 @@ In the [future work document](Documents/Future%20Improvements), we have listed a
 During the implementation of these features, we will also prioritize team cohesion and effective communication. We will actively explore new solutions and ideas, conducting experiments and testing to ensure the stability and reliability of the functionalities. Additionally, we will focus on enhancing the user experience to ensure our product truly meets the needs of our users.
 
 ## Risk Management
-[Risk management](Documents/Risk%20management/Risk%20management.pdf) explores how to effectively identify, analyze, and address these risks, ensuring that our software products are of high quality, delivered on time, and within budget.
+[Risk management](Documents/Risk%20management/Risk%20management.md) explores how to effectively identify, analyze, and address these risks, ensuring that our software products are of high quality, delivered on time, and within budget.
 
 ## Acknowledgements
 We would like to express our gratitude to all those who helped us during the completion of this project.
