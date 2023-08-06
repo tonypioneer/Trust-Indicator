@@ -31,7 +31,7 @@ The project's objective is to offer consumers a reliable resource to improve the
 
 ## Team Members and Roles
 |UID|Name|Role|
-|:---------|:------------:|-------------------------------------:|
+|:---------|:------------:|:-------------------------------------:|
 |u7588748|Lingxiu Cai|Frontend & Backend Developer|
 |u7504537|Tony Chen|Project Manager & CTO|
 |u7529732|Song Han|Frontend & DataBase Manager|
