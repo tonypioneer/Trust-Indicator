@@ -4,7 +4,7 @@
 2. [Team Members and Roles](#team-members-and-roles)
 3. [Statement of Work](#statement-of-work)
 4. [Getting Start](#getting-start)
-5. [Project Management Plan](#project-management-plan)
+5. [Project Management](#project-management)
 6. [Team Charter](#team-charter)
 7. [Meeting Minutes](#meeting-minutes)
 8. [Decision Log](#decision-log)
@@ -46,7 +46,15 @@ We use [GitHub Discussions](https://github.com/YifangMeng/Trust-Indicator/discus
 
 For bugs and feature requests, please [raise an issue](https://github.com/YifangMeng/Trust-Indicator/issues/new/choose) and follow the templates there.
 
-## Project Management Plan
+## Project Management
+In managing our web API development project, we faced challenges such as increasing complexity, the need for consistency in development environments, version control requirements, and time and resource constraints. To address these, we made the following tools:
+
+- Use Git as our version control system to facilitate collaboration and prevent conflicts.
+- Utilize development environments like Visual Studio and WebStorm to ensure uniformity across the team and prevent inconsistencies.
+- Use Postman for testing to ensure the code's reliability and effectiveness.
+- Chose GitHub Projects for task management and the GitHub Kanban workflow for our development process, aiming for seamless integration, simplicity, cost-effectiveness, and enhanced collaboration within the team.
+- Organize weekly catch-up meetings for code review before merging into the main branch to maintain code quality, ensuring that the code is readable, maintainable, efficient, and error-free.
+
 ## Team Charter
 ## Meeting Minutes
 - [Client Meeting](Documents/Meeting%20Minutes/Client%20Meeting/)
