@@ -8,13 +8,12 @@
 6. [Team Charter](#team-charter)
 7. [Meeting Minutes](#meeting-minutes)
 8. [Decision Log](#decision-log)
-9. [Journey Log](#journey-log)
-10. [Conflict Resolution Protocol](#conflict-resolution-protocol)
-11. [Testing Summary](#testing-summary)
-12. [User Manual](#user-manual)
-13. [Deliverables](#deliverables)
-14. [Future Improvements](#future-improvements)
-15. [Acknowledgements](#acknowledgements)
+9. [Conflict Resolution Protocol](#conflict-resolution-protocol)
+10. [Testing Summary](#testing-summary)
+11. [User Manual](#user-manual)
+12. [Deliverables](#deliverables)
+13. [Future Improvements](#future-improvements)
+14. [Acknowledgements](#acknowledgements)
 ## Project Description
 - **Version:** 1.0.0, August, 2023
   
@@ -27,7 +26,7 @@ The project's objective is to offer consumers a reliable resource to improve the
 
 - **Tech Stack:** [Tech Stack Documentation](Documents/Tech%20Stack/Tech%20Stack.md)
   
-- **Stakeholders:**
+- **Stakeholders:** [Stakerholders analysis](Documents/Stakeholders%20List%20and%20Impact/Stakeholders.md)
 
 ## Team Members and Roles
 |UID|Name|Role|
@@ -65,8 +64,7 @@ By focusing on integration, simplicity, and collaboration, we've positioned our 
 - [Tutorial Meeting](Documents/Meeting%20Minutes/Tutorial%20Meeting/)
 ## Decision Log
 This [Decision Log](Documents/Decision%20Log/) of our project documentation serves as a comprehensive record of all the key decisions made throughout the project lifecycle. 
-## Journey Log
-In this [development guide](Documents/Journey%20Log), we will delve into each stage of the development process, from project planning, requirement gathering, design, coding, to testing and delivery. We will share best practices, tools, and methodologies to ensure the success of the project and the satisfaction of our clients.
+
 ## Conflict Resolution Protocol
 - **Purpose:**
 <p>The purpose of this document is to outline a well-defined protocol for handling conflicts within our Android development team. This protocol is intended to ensure that disagreements and issues are resolved efficiently and effectively, allowing us to maintain a healthy and collaborative work environment while focusing on the completion of our APP design and testing tasks.</p >
