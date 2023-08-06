@@ -1,29 +1,30 @@
-# Meeting Minutes 
+# **Meeting Minutes**
 
-- Date/Time:  
+## **Date/Time:**  
 
-- Location:  
+## **Location:**
 
-- Attendees:  
+## **Attendees:** 
 
-## Agenda: 
+## **Agenda:** 
 
 
-## Discussion: 
-
- 
+## **Discussion:**
 
  
 
+ 
 
-## Action Items: 
 
-| Action        | Constraints           | Responsible Team Member  |
+## **Action Items:**
+
+| **Action** | **Constraints** | **Responsible Team Member** |
 | ------------- |:---------------------:| ------------------------:|
 |               |                       |                          |
 |               |                       |                          |
 
 
-## Notes: 
+## **Notes:** 
+
 
  
