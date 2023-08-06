@@ -13,4 +13,4 @@ This document outlines the future work planned for our project. As we continue t
 - **Dependencies**: Research, file upload handling.
 
 ## Template
-Please follow the template provided in [Future Work Template.md](./Future%20Work%20Template.md) for all decision logs to maintain consistency.
+Please follow the template provided in [Future Work Template.md](./Future%20Work%20Template.md) for future works to maintain consistency.
