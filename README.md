@@ -47,13 +47,15 @@ We use [GitHub Discussions](https://github.com/YifangMeng/Trust-Indicator/discus
 For bugs and feature requests, please [raise an issue](https://github.com/YifangMeng/Trust-Indicator/issues/new/choose) and follow the templates there.
 
 ## Project Management
-In managing our web API development project, we faced challenges such as increasing complexity, the need for consistency in development environments, version control requirements, and time and resource constraints. To address these, we made the following tools:
+In managing our web API development project, we faced challenges such as increasing complexity, the need for consistency in development environments, version control requirements, and time and resource constraints. To address these, we made the following decisions:
 
 - Use Git as our version control system to facilitate collaboration and prevent conflicts.
 - Utilize development environments like Visual Studio and WebStorm to ensure uniformity across the team and prevent inconsistencies.
 - Use Postman for testing to ensure the code's reliability and effectiveness.
 - Chose GitHub Projects for task management and the GitHub Kanban workflow for our development process, aiming for seamless integration, simplicity, cost-effectiveness, and enhanced collaboration within the team.
 - Organize weekly catch-up meetings for code review before merging into the main branch to maintain code quality, ensuring that the code is readable, maintainable, efficient, and error-free.
+
+By focusing on integration, simplicity, and collaboration, we've positioned our team to work with greater agility and transparency, aligning our tooling and workflows with the specific needs and goals of our project. The full decision log can be accessed [here](Document/Decision%20Log/Tools%20for%20Project%20Management).
 
 ## Team Charter
 ## Meeting Minutes
