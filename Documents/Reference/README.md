@@ -14,9 +14,13 @@ Throughout the project, we utilized the following resources and references:
   - Image Processing Library: [ExifTool](https://exiftool.org/) - Used for extracting metadata from images. 
 
 - **Research Papers and Articles**
-  - [Repository Name]: [URL or location of the code repository] 
-  - [Documentation Name]: [URL or location of project documentation] 
-
+  - Research paper:
+  - F. Temmermans, S. Caldwell, S. Papadopoulos, F. Pereira and P. Rixhon, "Towards an international standard to establish trust in media production, distribution and consumption," 2023 24th International Conference on Digital Signal Processing (DSP), Rhodes (Rodos), Greece, 2023, pp. 1-5, doi: 10.1109/DSP58604.2023.10167884.
+  - Caldwell, S., and T. Gedeon. "Framing photos in the digital dark age: towards a socio-technological'ecology of images'." Applications of Digital Image Processing XLIV. Vol. 11842. SPIE, 2021.
+  - S. Caldwell, T. Gedeon (2019) SCIENCE OR ART? THE CREDIBILITY SPECTRUM OF IMAGE MANIPULATION, ICERI2019 Proceedings, pp. 6172-6179.
+  - Caldwell, S., Gedeon, T., Jones, R., & Henschke, M. (2015). Comparing Eye Gaze Tracking to Reported
+Perceptions of Manipulated and Unmanipulated Digital Images. Australian Journal of Intelligent
+Information Processing Systems, 14(3).
 - **Tutorials and Training**
   - [Tutorial Name]: [URL or location of the online tutorial] 
 
