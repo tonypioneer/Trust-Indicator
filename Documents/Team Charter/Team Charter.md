@@ -14,10 +14,15 @@ Vice-Spokesperson: Vidhu Chaudhary
 
 **Technical Roles:**
 Lingxiu Cai - Frontend & Backend Developer
+
 Vidhu Chaudhary- Documentation Manager & Frontend Developer
+
 Tony Chen - Project Manager & CTO
+
 Song Han - Frontend & DataBase Manager
+
 Yifang Meng - Backend & Quality Assurance
+
 Zhaoyun Zhang - Backend & Machine Learning Instructor
 
 ## **Team Principles:**
@@ -59,7 +64,7 @@ Zhaoyun Zhang - Backend & Machine Learning Instructor
 
 ## **Conflict Resolution:**
 
-•	Discuss conflicts openly during team meetings and resolve through final decisions using team member votes.
-•	If a member fails to meet the initial plan, then the rest of the team members will give a warning first and if a serious problem is encountered, then they will report it to the course convenor or tutor. 
-•	If there is a conflict of opinion, then the team leader will take an informed decision for the team. 
-•	If a member gets sick, then he/she is responsible for informing the team members so that the schedule can be readjusted. If the condition is serious and he/she cannot recover in time, then the other team members can discuss with the course convenor how to proceed with the project. The other team members should also readjust the priorities of the tasks and distribution of the tasks to support their team member.
+- Discuss conflicts openly during team meetings and resolve through final decisions using team member votes.
+- If a member fails to meet the initial plan, then the rest of the team members will give a warning first and if a serious problem is encountered, then they will report it to the course convenor or tutor. 
+- If there is a conflict of opinion, then the team leader will take an informed decision for the team. 
+- If a member gets sick, then he/she is responsible for informing the team members so that the schedule can be readjusted. If the condition is serious and he/she cannot recover in time, then the other team members can discuss with the course convenor how to proceed with the project. The other team members should also readjust the priorities of the tasks and distribution of the tasks to support their team member.
