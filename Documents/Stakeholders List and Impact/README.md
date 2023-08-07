@@ -2,6 +2,9 @@
 ![show](https://github.com/tonypioneer/Trust-Indicator/assets/141119645/7c41c064-54dd-4628-b62d-808fc57ba25f)
 
 # Stakeholders and analysis
+
+![show](https://github.com/tonypioneer/Trust-Indicator/blob/41cc7872c2dd769f620f50357154e3aff219abf3/Documents/Stakeholders%20List%20and%20Impact/StakeholderAnalysis.png)
+
 - ## **General User:**
   The general user is at the heart of the project's objective. With the rise of misleading images on social media and digital media,
   the general user is most at risk of consuming false or manipulated information. This user seeks a trustworthy source to validate the authenticity of images.
