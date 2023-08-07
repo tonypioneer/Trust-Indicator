@@ -100,4 +100,6 @@ Cons: It might require more time and effort to integrate with GitHub, potential 
 
 The decision to use GitHub Projects to manage tasks and the GitHub Kanban is rooted in the desire for seamless integration, simplicity, and cost-effectiveness. This approach aligns well with the existing tools and goals of the project, providing a streamlined and cohesive solution without unnecessary complexity. The selected options take advantage of the team's familiarity with GitHub and focus on enhancing collaboration and agility in the development process. 
 
- 
+ ## Brief Decision Making Log
+
+ ![show](https://github.com/tonypioneer/Trust-Indicator/blob/97dcdcefb9d555261442ff8e46e50afd88dcb9f0/Documents/Decision%20Logs/DecisionMakingLog.png)
