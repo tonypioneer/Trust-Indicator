@@ -32,8 +32,7 @@ an essential role in their expertise area.
 |(3) The server side helps efficiently load webpages for users, improving the user experience. |(3) Avoid the server side may not be compatible with third-party JavaScript code|       
 
 Aslo, after our team members carefully compared the advantages of establishing server
-side and not having server-side, creating a stable, fast, and standalone web version of
-the spelling game tool would be a primary purpose of our team, thereby we are
+side and not having server-side, creating a stable, fast, and standalone web version would be a primary purpose of our team, thereby we are
 concerned that ability to load web pages quickly while the user was playing spelling
 games to make the user experience better. Oppositely, we may not be interested in debugging the web pages that crashed due to frequent server requests as the utilization
 of our server in this project is limited to the establishment and update of the database
