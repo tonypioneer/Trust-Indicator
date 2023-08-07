@@ -33,8 +33,7 @@ an essential role in their expertise area.
 
 Aslo, after our team members carefully compared the advantages of establishing server
 side and not having server-side, creating a stable, fast, and standalone web version would be a primary purpose of our team, thereby we are
-concerned that ability to load web pages quickly while the user was playing spelling
-games to make the user experience better. Oppositely, we may not be interested in debugging the web pages that crashed due to frequent server requests as the utilization
+concerned that ability to load web pages quickly. Oppositely, we may not be interested in debugging the web pages that crashed due to frequent server requests as the utilization
 of our server in this project is limited to the establishment and update of the database
 and the realization of some functions.
 We believe it is a correct long-term decision to divide the architecture of the entire
