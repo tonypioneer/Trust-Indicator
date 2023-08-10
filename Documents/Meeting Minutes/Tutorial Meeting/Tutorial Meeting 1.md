@@ -6,7 +6,7 @@
 
 ## **Location:** 
 
-tutorial room
+Tutorial room N101 CSIT Building
 
 ## **Attendees:** 
 
