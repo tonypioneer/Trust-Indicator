@@ -2,7 +2,7 @@
 
 ## **Date/Time:** 
 
-9 August 2023, 3:00pm – 4:00pm
+2 August 2023, 3:00pm – 4:00pm
 
 ## **Location:** 
 
