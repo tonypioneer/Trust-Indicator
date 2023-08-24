@@ -1,3 +1,5 @@
+![show](./EERDiagram_1.0.1v.jpg)
+
 User DB:
 -	UserID: A unique identifier for each user, automatically generated.
 -	UserName: A preferred name the user gives (default is the user’s legal name).
