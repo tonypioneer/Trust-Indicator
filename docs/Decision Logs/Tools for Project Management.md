@@ -102,4 +102,4 @@ The decision to use GitHub Projects to manage tasks and the GitHub Kanban is roo
 
  ## Brief Decision Making Log
 
- ![show](https://github.com/tonypioneer/Trust-Indicator/blob/97dcdcefb9d555261442ff8e46e50afd88dcb9f0/Documents/Decision%20Logs/DecisionMakingLog.png)
+ ![show](https://github.com/tonypioneer/Trust-Indicator/blob/97dcdcefb9d555261442ff8e46e50afd88dcb9f0/docs/Decision%20Logs/DecisionMakingLog.png)

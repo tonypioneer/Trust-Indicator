@@ -25,9 +25,9 @@
 - **Objective:** The project aims to develop a photo repository website with Australia as its theme, aiding consumers in better understanding and evaluating the credibility of images by displaying uploaded image metadata and providing visual cues. The website will be an open-source project, allowing users to upload their own images while adhering to knowledge sharing (CC) license requirements. By collecting image metadata and displaying credibility signals, the website will assist users in identifying and discerning authentic images. Additionally, website members can contribute contextual information, such as photographer statements, to provide more background details.
 The project's objective is to offer consumers a reliable resource to improve their ability to judge image authenticity. It also provides photographers and creators with a platform to showcase their works and offer additional information, enhancing public understanding and awareness of images. By being an open-source project, the website encourages other developers to contribute and improve, facilitating ongoing project development and enhancement.
 
-- **Tech Stack:** [Tech Stack Documentation](Documents/Tech%20Stack/README.md)
+- **Tech Stack:** [Tech Stack Documentation](docs/Tech%20Stack/README.md)
   
-- **Stakeholders:** [Stakerholders analysis](Documents/Stakeholders%20List%20and%20Impact/README.md)
+- **Stakeholders:** [Stakerholders analysis](docs/Stakeholders%20List%20and%20Impact/README.md)
 
 ## Team Members and Roles
 |UID|Name|Role|
@@ -39,10 +39,10 @@ The project's objective is to offer consumers a reliable resource to improve the
 |u7342064|Yifang Meng|Backend & Quality Assurance|
 |u7545864|Zhaoyun Zhang|Backend & Machine Learning Instructor|
 ## Statement of Work
-[Statement of Work](Documents/Statement%20of%20Work/Trust%20Indicators%20-%20Statement%20of%20Work.pdf)
+[Statement of Work](docs/Statement%20of%20Work/Trust%20Indicators%20-%20Statement%20of%20Work.pdf)
 
 ## Getting Start
-See the [online documentation](Documents/Reference/) for references we referenced in the project.
+See the [online documentation](docs/Reference/) for references we referenced in the project.
 
 We use [GitHub Discussions](https://github.com/YifangMeng/Trust-Indicator/discussions) as our forum, and Microsoft Teams for chat. These are great places to ask questions and advice from the community or to discuss projects.
 
@@ -57,18 +57,18 @@ In managing our web API development project, we faced challenges such as increas
 - Chose GitHub Projects for [task management](https://github.com/tonypioneer/Trust-Indicator/issues), the GitHub [Kanban workflow](https://github.com/users/tonypioneer/projects/1/views/1), and the GitHub [timeline](https://github.com/users/tonypioneer/projects/1/views/9) for our development process, aiming for seamless integration, simplicity, cost-effectiveness, and enhanced collaboration within the team.
 - Organize weekly catch-up meetings for code review before merging into the main branch to maintain code quality, ensuring that the code is readable, maintainable, efficient, and error-free.
 
-By focusing on integration, simplicity, and collaboration, we've positioned our team to work with greater agility and transparency, aligning our tooling and workflows with the specific needs and goals of our project. The full decision log can be accessed [here](Documents/Decision%20Logs/Tools%20for%20Project%20Management.md).
+By focusing on integration, simplicity, and collaboration, we've positioned our team to work with greater agility and transparency, aligning our tooling and workflows with the specific needs and goals of our project. The full decision log can be accessed [here](docs/Decision%20Logs/Tools%20for%20Project%20Management.md).
 
 
 ## Team Charter
-This [document](Documents/Team%20Charter/Team%20Charter.md) elaborates on the team's goals, structure, duties, norms, and protocols. It sets a clear direction and delineation for the team, aiding members in fostering mutual expectations and consensus. The primary aim of the team charter is to enhance team efficiency, bolster collaboration, and reduce misunderstandings and potential conflicts.
+This [document](docs/Team%20Charter/Team%20Charter.md) elaborates on the team's goals, structure, duties, norms, and protocols. It sets a clear direction and delineation for the team, aiding members in fostering mutual expectations and consensus. The primary aim of the team charter is to enhance team efficiency, bolster collaboration, and reduce misunderstandings and potential conflicts.
 
 ## Meeting Minutes
-- [Client Meeting](Documents/Meeting%20Minutes/Client%20Meeting/)
-- [Team Meeting](Documents/Meeting%20Minutes/Team%20Meeting/)
-- [Tutorial Meeting](Documents/Meeting%20Minutes/Tutorial%20Meeting/)
+- [Client Meeting](docs/Meeting%20Minutes/Client%20Meeting/)
+- [Team Meeting](docs/Meeting%20Minutes/Team%20Meeting/)
+- [Tutorial Meeting](docs/Meeting%20Minutes/Tutorial%20Meeting/)
 ## Decision Logs
-The Decision Log System is a tool designed to track and manage decisions made within a project or organization. By logging decisions, including the context, rationale, options considered, and outcomes, teams can improve transparency, responsibility, and learning. This [Decision Logs](Documents/Decision%20Logs/) of our project documentation serves as a comprehensive record of all the key decisions made throughout the project lifecycle. 
+The Decision Log System is a tool designed to track and manage decisions made within a project or organization. By logging decisions, including the context, rationale, options considered, and outcomes, teams can improve transparency, responsibility, and learning. This [Decision Logs](docs/Decision%20Logs/) of our project documentation serves as a comprehensive record of all the key decisions made throughout the project lifecycle. 
 
 ## Conflict Resolution Protocol
 - **Purpose:**
@@ -89,7 +89,7 @@ The Decision Log System is a tool designed to track and manage decisions made wi
     <p>Team members are encouraged to offer suggestions and ideas, no matter how unconventional they may seem.</p >
     <p>The team should aim for a consensus-based solution, where all parties involved are in agreement.</p >
 ## Testing Summary
-In the [testing report](Documents/Testing%20Summary), we will highlight the key testing milestones, the test strategies employed, and the outcomes of our testing activities to ensure the quality and reliability of our Product/Software/Service.
+In the [testing report](docs/Testing%20Summary), we will highlight the key testing milestones, the test strategies employed, and the outcomes of our testing activities to ensure the quality and reliability of our Product/Software/Service.
 ## User Manual
 Welcome to our product! In this [user manual]() (we will update this document when the product is delivered), you will find detailed guides and instructions on how to use our product. Whether you are a beginner or an experienced user, this manual will help you get started quickly and unleash the full potential of the product. 
 
@@ -108,13 +108,13 @@ In the initial phase of project development, our focus is on implementing core f
 
 Our team will also maintain an open and flexible attitude. As the project progresses, we are ready to make adjustments and optimizations based on real-world conditions. We deeply understand that project development is an ongoing iterative process, not a one-time task.
 
-In the [future work document](Documents/Future%20Improvements), we have listed a continuous feature roadmap for accomplishing future objectives. These functionalities represent our team's vision and mission, serving as the guiding direction and goals for our progress.
+In the [future work document](docs/Future%20Improvements), we have listed a continuous feature roadmap for accomplishing future objectives. These functionalities represent our team's vision and mission, serving as the guiding direction and goals for our progress.
 
   
 During the implementation of these features, we will also prioritize team cohesion and effective communication. We will actively explore new solutions and ideas, conducting experiments and testing to ensure the stability and reliability of the functionalities. Additionally, we will focus on enhancing the user experience to ensure our product truly meets the needs of our users.
 
 ## Risk Management
-[Risk management](Documents/Risk%20management/Risk%20management.md) explores how to effectively identify, analyze, and address these risks, ensuring that our software products are of high quality, delivered on time, and within budget.
+[Risk management](docs/Risk%20management/Risk%20management.md) explores how to effectively identify, analyze, and address these risks, ensuring that our software products are of high quality, delivered on time, and within budget.
 
 ## Acknowledgements
 We would like to express our gratitude to all those who helped us during the completion of this project.
