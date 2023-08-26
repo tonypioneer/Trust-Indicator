@@ -1,11 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace TrustIndicator.Model
+namespace Trust_Indicator.Model
 {
     public class Metadata
     {
         [Key]
-        public int PhotoID { get; set; }
+        public int ImageID { get; set; }
         public int File_Size { get; set; }
         public string File_Type { get; set; }
         public string MIME_Type { get; set; }
