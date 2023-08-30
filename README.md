@@ -103,25 +103,23 @@ The project mainly has the following deliverables.
 - Extract and record image metadata, including shooting equipment, shooting date, geographic location, and other information.
 - Conduct research to explore credibility signal design based on image metadata, including visual cues or other symbolic representations.
 - Allow users to view the EXIF information of uploaded images, such as aperture, shutter speed, ISO, and other shooting parameters.
-- Record the modification history of metadata, allowing users to view previous versions of metadata and trace changes and sources of image information.
-
-### Intermediate Priorities - If Applicable
-
-- Embed knowledge sharing (CC) license terms on the website to ensure copyright information for uploaded images and content.
 - Design an image upload feature, allowing users to upload images.
-- Show credibility signals/visual cues to help users assess the credibility of images.
 - Allow website members to add contextual information to images, such as photographer statements or other relevant details.
+- Allow users to create collections to save their favorite images for later viewing.
+- Allow users to add and manage tags and keywords for images, enhancing the accuracy and efficiency of image search.
+- Set up a data backup mechanism to safeguard the security and integrity of images and metadata.
+- Enable users to leave comments and ratings on image pages, providing additional information and feedback to other users.
+  
+### Intermediate Priorities - If Applicable
+- Embed knowledge sharing (CC) license terms on the website to ensure copyright information for uploaded images and content.
+- Show credibility signals/visual cues to help users assess the credibility of images.
 - Ensure the accuracy and credibility of added contextual information.
 - Add image search functionality, allowing users to search based on keywords, date ranges, geographical locations, and other metadata information.
 - Provide filtering options, enabling users to narrow down image results based on credibility, license types, and other criteria.
-- Allow users to create collections to save their favorite images for later viewing.
 - Incorporate image sharing functionality, allowing users to easily share their favorite images on social media or via links.
 - Set up a user feedback system, enabling users to provide opinions, suggestions, or report issues to website administrators.
-- Enable users to leave comments and ratings on image pages, providing additional information and feedback to other users.
-- Offer image storyboard functionality, allowing users to create storyboards and combine multiple images into a cohesive narrative to share their creativity and stories.
-- Allow users to add and manage tags and keywords for images, enhancing the accuracy and efficiency of image search.
 - Implement appropriate security measures to prevent malicious uploads or data leaks.
-- Set up a data backup mechanism to safeguard the security and integrity of images and metadata.
+
 
 ## Future Improvements
 Considering future improvements and continuous optimization is crucial when developing a project. While our goal is to deliver a high-quality product at the current stage, we recognize that technology and market conditions are constantly changing. Therefore, we are willing to invest time and effort in thinking and planning for future enhancements.
