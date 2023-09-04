@@ -13,6 +13,6 @@ namespace Trust_Indicator.Dtos
         public bool Is_Favorite { get; set; }
         public string? Comment { get; set; }
         [Timestamp]
-        public byte[] Create_Date { get; set; }
+        public DateTime Create_Date { get; set; }
     }
 }

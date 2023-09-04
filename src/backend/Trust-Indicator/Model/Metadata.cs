@@ -10,9 +10,9 @@ namespace Trust_Indicator.Model
         public string File_Type { get; set; }
         public string MIME_Type { get; set; }
         [Timestamp]
-        public byte[] Create_Date { get; set; }
+        public DateTime Create_Date { get; set; }
         [Timestamp]
-        public byte[] Modify_Date { get; set; }
+        public DateTime Modify_Date { get; set; }
         public string Color_Space { get; set; }
         public string Make { get; set; }
         public string Model { get; set; }

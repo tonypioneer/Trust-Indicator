@@ -11,10 +11,10 @@ namespace Trust_Indicator.Model
         [Required]
         public int UserID { get; set; }
 
-        public int? Rate { get; set; }
+        public int Rate { get; set; }
         public bool Is_Favorite { get; set; }
         public string? Comment { get; set; }
         [Timestamp]
-        public byte[] Create_Date { get; set; }
+        public DateTime Create_Date { get; set; }
     }
 }
