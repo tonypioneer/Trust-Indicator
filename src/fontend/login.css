@@ -90,7 +90,18 @@ body {
     line-height: 1.1rem;
     color: #8B8E98
 }
-
+.wrong-prompt{
+    width: 350px;
+    height: 50px;
+    background: #C4362E;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: -20px;
+    display: none;
+}
 .input_container {
     width: 100%;
     height: fit-content;
@@ -141,6 +152,44 @@ body {
     background-color: transparent;
 }
 
+.tooltip {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 10px;
+    z-index: 1;
+    /*display: none;*/
+    width: 170px;
+    border: 2px solid #C4362E;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 0.8rem;
+    color: #C4362E;
+    display: none;
+}
+.tooltip::before {
+    content: "";
+    position: absolute;
+    top: -16px;  /* Size of the triangle */
+    left: 15px;  /* Positioning the triangle to the left */
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 16px solid ;
+    z-index: -1;
+}
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: -10px;  /* One pixel inside the bigger triangle */
+    left: 15px;  /* Matching position with the bigger triangle */
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid ;
+    z-index: 0;
+}
 
 .sign-in_btn {
     width: 40%;
