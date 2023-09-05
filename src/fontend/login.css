@@ -51,8 +51,9 @@ body {
     box-sizing: border-box;
     width: 80px;
     height: 80px;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(248, 248, 248, 0)), to(#F8F8F888));
-    background: linear-gradient(180deg, rgba(248, 248, 248, 0) 50%, #F8F8F888 100%);
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(248, 248, 248, 0)), to(#F8F8F888));*/
+    /*background: linear-gradient(180deg, rgba(248, 248, 248, 0) 50%, #F8F8F888 100%);*/
+    background: #00467F;
     border: 1px solid #F7F7F8;
     -webkit-filter: drop-shadow(0px 0.5px 0.5px #EFEFEF) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
     filter: drop-shadow(0px 0.5px 0.5px #EFEFEF) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
@@ -382,7 +383,8 @@ body {
     margin-top: 5%;
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
+    bottom: 0;
 }
 .connect-container{
     height: 60%;

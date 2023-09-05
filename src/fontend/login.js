@@ -17,7 +17,7 @@ function sign_in(event){
         email_prompt.style.display = 'block';
         setTimeout(function() {
             email_prompt.style.display = 'none';
-        }, 2000); // 3000 毫秒 = 3 秒
+        }, 2000);
     }
     if (emailField.value === '' & passwordField.value === '') {
         console.log('Password is empty');
@@ -30,5 +30,5 @@ function sign_in(event){
 }
 
 function sign_up(){
-    window.location.href="signUp.html"
+    window.location.href="signup.html"
 }
