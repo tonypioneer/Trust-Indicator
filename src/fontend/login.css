@@ -1,12 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: fit-content;
     background: #00467F;
+    min-height: 100vh;
+    display: flex;
 }
 
 .container {
@@ -14,6 +15,7 @@ body {
     height: fit-content;
     margin-top: 3%;
     margin-bottom: 3%;
+    flex: 1;
 }
 
 .form_container {
@@ -383,8 +385,7 @@ body {
     margin-top: 5%;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 0;
+    position: relative;
 }
 .connect-container{
     height: 60%;
