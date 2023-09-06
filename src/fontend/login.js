@@ -32,3 +32,6 @@ function sign_in(event){
 function sign_up(){
     window.location.href="signup.html"
 }
+function access(){
+    window.location.href="changepassword.html"
+}
