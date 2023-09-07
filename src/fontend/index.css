@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.top-title{
+    width: 100%;
+    height:30px;
+    background: #009AC9;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    color: white;
+    display: flex;
+}
+.top-title p{
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.top-title p:hover {
+    text-decoration: underline;
+}
+.navigation-bar-container{
+    width: 100%;
+    height: 130px;
+    /*background: #00467F;*/
+    position: relative;
+}
+.navigation-bar-top{
+    width: 100%;
+    height: 65px;
+    background: #eeeeee;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.search-container{
+    height: 100%;
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    margin-left: 50%;
+}
+.info-panels {
+    --color-icon: #fff;
+    --color-input: #ccc;
+    --color-border: #9e9e9e;
+    --color-border-hover: #1a73e8;
+    --all-transition: all .2s ease-out;
+    --input-focus-opacity: .3;
+    width: 100%;
+}
+.input-color-group-one {
+    position: relative;
+}
+.search-input {
+    width: 60%;
+    border: 1.5px solid #00467F;
+    border-radius: 30px;
+    background: white;
+    margin-left: 20%;
+    font-size: 1rem;
+    transition: var(--all-transition);
+    height: 30px;
+    min-width: 120px;
+    padding: 4px;
+}
+.search-input::placeholder {
+    font-size: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2e2e2e;
+}
+.search-input:focus {
+    color: var(--color-input);
+    outline: none;
+    border: 1.5px solid var(--color-border-hover);
+}
+.search-input:valid {
+    color: #00467F;;
+    outline: none;
+}
+.search-input::-webkit-input-placeholder {
+    color: var(--color-input);
+}
+.search-input::-moz-input-placeholder {
+    color: var(--color-input);
+}
+.search-input::-ms-input-placeholder {
+    color: var(--color-input);
+}
+.search-input:focus::-webkit-input-placeholder, .search-input:valid::-webkit-input-placeholder {
+    opacity: var(--input-focus-opacity);
+}
+.search-input:focus::-moz-input-placeholder, .search-input:valid::-moz-input-placeholder {
+    opacity: var(--input-focus-opacity);
+}
+.search-input:focus::-ms-input-placeholder, .search-input:valid::-ms-input-placeholder {
+    opacity: var(--input-focus-opacity);
+}
+.search-label {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 0 5px;
+    border: 1.5px solid #00467F;
+    border-radius: 20px;
+    top: -9px;
+    left: 25%;
+    background-color: #00467F;
+    cursor: default;
+    backdrop-filter: blur(10px);
+    transition: var(--all-transition);
+    font-size: 12px;
+}
+
+.search-input:focus ~ .color-label, .search-input:valid ~ .search-label {
+    color: var(--color-border-hover);
+    border: 1.5px solid var(--color-border-hover);
+}
+.search-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 1.5px solid #ffffff;
+    border-radius: 50%;
+    top: -13px;
+    right: 25%;
+    left: 70%;
+    background-color: transparent;
+    background: #00467F;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: var(--all-transition);
+}
+.search-button:hover {
+    background-color: #C4362E;
+    transform: scale(1.2);
+}
+.search-button:active {
+    transform: scale(1.1);
+}
+.search-input:focus ~ .search-button {
+    border: 1.5px solid #C4362E;
+}
+.search-input:valid .search-input:focus ~ .search-button  {
+    border: 1.5px solid #C4362E;
+}
+.search-input:focus ~ .search-button:hover {
+    background-color: #C4362E;
+}
+.search-button:hover {
+    fill: var(--color-icon);
+}
+.search-input:focus ~ .search-button {
+    fill: var(--color-border-hover);
+}
+.search-input:focus ~ .search-button:hover #icon-btn-copy, .search-input:valid ~ .search-button:hover{
+    fill: var(--color-icon);
+}
+
+
+.login-container{
+    width: 60px;
+    height: 60px;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sign-icon {
+  margin-top: 10px;
+}
+.sign-icon i {
+    transition: color 0.3s;
+    color: #00467F;
+}
+.sign-text {
+    margin-top: 1px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.login-container:hover .sign-icon i {
+    color: #C4362E;
+}
+
+.login-container:hover .sign-text {
+    color: #C4362E;
+}
+.navigation-bar-bottom{
+    width: 100%;
+    height: 65px;
+    background: red;
+}
+.logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #00467F;
+    bottom: 15.5px;
+    left: 5%;
+    clip-path: polygon(25% 0%, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 25%);
+}
