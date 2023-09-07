@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
@@ -25,6 +25,7 @@ body{
     height: 130px;
     /*background: #00467F;*/
     position: relative;
+
 }
 .navigation-bar-top{
     width: 100%;
@@ -36,13 +37,14 @@ body{
 }
 .search-container{
     height: 100%;
-    width: 35%;
+    width: 60%;
     align-items: center;
     justify-content: center;
     justify-items: center;
     display: flex;
-    margin-left: 50%;
+    margin-left: 20%;
 }
+
 .info-panels {
     --color-icon: #fff;
     --color-input: #ccc;
@@ -169,11 +171,12 @@ body{
 .login-container{
     width: 60px;
     height: 60px;
-    margin-left: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: fixed;
+    right: 15%;
 }
 .sign-icon {
   margin-top: 10px;
@@ -195,6 +198,118 @@ body{
 .login-container:hover .sign-text {
     color: #C4362E;
 }
+
+.sign-in-content {
+    /*display: none;*/
+    width: 250px;
+    min-width: 100px;
+    background: white;
+    border: 1px solid #00467F;
+    top: 105px;
+    right: 13%;
+    z-index: 1;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    display: none;
+    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes slide-bottom {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.content-triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #00467F;
+    position: absolute;
+    top: -15px;
+    left: 80%;
+    transform: translateX(-50%);
+}
+
+.content-section {
+    padding-top:7.5px;
+    padding-left: 15px;
+    display: flex;
+    margin-bottom: 0;
+    height: 30px;
+    font-size: 14px;
+    color: #00467F;
+
+}
+
+.divider {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 0;
+}
+#show-name{
+    background: #00467F;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 5px;
+
+}
+.fa-right{
+    margin-left: 20%;
+    margin-top: 1%;
+    font-size: 10px;
+}
+#change-password:hover, #edit-profile:hover {
+    animation: move-right 0.25s forwards;
+}
+@keyframes move-right {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(3px);
+    }
+    50%{
+        transform: translateX(6px);
+    }
+    75%{
+        transform: translateX(9px);
+    }
+    100%{
+        transform: translateX(12px);
+    }
+}
+.sign-out-button {
+    width: 55%;
+    height: 35px;
+    border-radius: 15px;
+    font-size: 0.95rem;
+    border: 2px solid #00467F;
+    cursor: pointer;
+    font-weight: bolder;
+    display: inline-block;
+    margin-top: 7px;
+    background: #ffffff;
+}
+.sign-out-button-color{
+    color: #00467F;
+}
+/*.sign-out-button-background-color{*/
+/*    background-color: #00467F;*/
+/*}*/
+.sign-out-button-color:hover{
+    color: #ffffff;
+}
+.sign-out-button-background-color:hover{
+    background-color: #00467F;
+}
+
+
 .navigation-bar-bottom{
     width: 100%;
     height: 65px;
@@ -208,4 +323,55 @@ body{
     bottom: 15.5px;
     left: 5%;
     clip-path: polygon(25% 0%, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 25%);
+}
+.language-change {
+    position: fixed;
+    right: 3%;
+    cursor: pointer;
+    padding: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    background: #00467F;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 40px;
+    color: #ffffff;
+    font-size: 8px;
+}
+.language-change:hover{
+    background: #C4362E;
+}
+#language-options {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #009AC9; ;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100px;
+    font-size: 1rem;
+    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#language-options li {
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    color: #00467F;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#language-options li:last-child {
+    border-bottom: none;
+}
+#language-options li:hover {
+    background-color: #00467F;
+    color: white;
+}
+.hidden {
+    display: none;
 }

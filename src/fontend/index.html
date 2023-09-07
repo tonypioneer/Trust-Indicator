@@ -32,14 +32,41 @@
             <!--search box-->
 
             <!--log in-->
-            <div class="login-container" onclick="sign_in()">
+            <div class="login-container" onclick="sign_in(event)">
                 <div class="sign-icon">
                     <i class="fa fa-user-circle-o" style="font-size:30px"></i>
                 </div>
                 <div class="sign-text">Sign In</div>
             </div>
             <!--log in-->
-            <div class="language-change"></div>
+
+            <!--log in content-->
+            <div class="sign-in-content">
+                <div class="content-section" id="show-name">Hi Song Han</div>
+                <hr class="divider">
+                <div class="content-section" id="change-password">Change Password<i class="fa fa-chevron-right fa-right" ></i></div>
+                <hr class="divider">
+                <div class="content-section" id="edit-profile">Edit Profile<i class="fa fa-chevron-right fa-right"></i></div>
+                <hr class="divider">
+                <div class="content-section" style="height: 50px;justify-content: center;align-content: center">
+                    <button type="button" title="Sign out"  class="sign-out-button  sign-out-button-color sign-out-button-background-color" onclick="sign_out(event)">
+                        <span>Sign Out &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></span>
+                    </button>
+                </div>
+                <div class="content-triangle"></div>
+            </div>
+            <!--log in content-->
+            <div class="language-change" onclick="toggleDropdown(event)">
+                <span id="selected-language">EN</span>
+                <span class="dropdown-arrow"><i class="fa fa-caret-down" style="font-size:20px;padding-left: 5px"></i></span>
+                <ul id="language-options" class="hidden">
+                    <li onclick="updateLanguage('EN', event)">English</li>
+                    <li onclick="updateLanguage('CN', event)">Chinese</li>
+                    <li onclick="updateLanguage('ES', event)">Spanish</li>
+                    <li onclick="updateLanguage('FR', event)">French</li>
+                    <li onclick="updateLanguage('DE', event)">German</li>
+                </ul>
+            </div>
         </div>
         <div class="navigation-bar-bottom"></div>
         <div class="logo"></div>
