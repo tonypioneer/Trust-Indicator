@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var whatWeDo = document.getElementById('menu-wwhatwedo');
         var community = document.getElementById('menu-community');
         if(window.innerWidth <= 1000 && window.innerWidth >700) {
-            // 按照新的顺序附加到UL
+
             ul.appendChild(home);
             ul.appendChild(watchList);
             ul.appendChild(whatWeDo);
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ul.appendChild(help);
             ul.appendChild(community);
         } else {
-            // 按照原始的顺序附加到UL
+
             ul.appendChild(home);
             ul.appendChild(gallery);
             ul.appendChild(watchList);

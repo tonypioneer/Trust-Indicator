@@ -303,9 +303,7 @@ body {
 .sign-out-button-color{
     color: #00467F;
 }
-/*.sign-out-button-background-color{*/
-/*    background-color: #00467F;*/
-/*}*/
+
 .sign-out-button-color:hover{
     color: #ffffff;
 }
@@ -382,8 +380,6 @@ body {
     display:block;
     text-align:center;
 }
-
-
 #mcmenu
 {
     width:auto;
