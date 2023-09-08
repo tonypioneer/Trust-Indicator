@@ -12,6 +12,7 @@ document.addEventListener('click', function(event) {
         !signInDiv.contains(event.target) &&
         !signInContent.contains(event.target)) {
         signInContent.style.display = 'none';
+        wasContentShown = false;
     }
 
     if (!languageChangeDiv.contains(event.target)) {
@@ -25,13 +26,27 @@ function sign_in(event) {
     const signInContent = document.querySelector('.sign-in-content');
     if(signInContent.style.display === 'block') {
         signInContent.style.display = 'none';  // 如果已经显示则隐藏
+        wasContentShown = false;
+
     } else {
         signInContent.style.display = 'block';  // 如果隐藏则显示
+        wasContentShown = true;
+
     }
 
     const dropdown = document.getElementById('language-options');
     dropdown.classList.add('hidden');
+
 }
+let wasContentShown = false;
+window.addEventListener('scroll', function() {
+    let content = document.querySelector('.sign-in-content');
+    if (window.scrollY > 0) {
+        content.style.display = 'none';
+    } else if (window.scrollY === 0 && wasContentShown) {
+        content.style.display = 'block';
+    }
+});
 
 function toggleDropdown(event) {
     event.stopPropagation();  // 阻止事件冒泡
@@ -44,6 +59,7 @@ function toggleDropdown(event) {
     } else {
         dropdown.classList.add('hidden');
     }
+    wasContentShown = false;
 }
 function updateLanguage(code, event) {
     const selectedLanguage = document.getElementById('selected-language');
@@ -106,3 +122,4 @@ document.addEventListener("DOMContentLoaded", function() {
     // 当窗口大小更改时再次运行
     window.addEventListener('resize', rearrangeMenu);
 });
+

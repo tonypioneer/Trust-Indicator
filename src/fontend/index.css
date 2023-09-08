@@ -175,8 +175,8 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    position: fixed;
-    right: 15%;
+    position: relative;
+    right: 5%;
 }
 .sign-icon {
   margin-top: 10px;
@@ -212,6 +212,10 @@ body {
     position: fixed;
     display: none;
     animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.hide-content {
+    display: none !important;
 }
 @keyframes slide-bottom {
     0% {
@@ -320,7 +324,7 @@ body {
     z-index: 3;
 }
 .language-change {
-    position: fixed;
+    position: relative;
     right: 3%;
     cursor: pointer;
     padding: 0 10px;
@@ -451,6 +455,13 @@ body {
     cursor:default;
 }
 
+
+/* 当屏幕宽度大于1000px时的样式 */
+@media (min-width: 1001px) {
+    #mcmenu .dropdown {
+        margin-top: 19px;
+    }
+}
 #mcmenu .dropdown li {
     display: block;
 }
@@ -519,10 +530,12 @@ body {
 #mcmenu ul.dropdown
 {
     min-width:240px; /* Sub level menu min width */
+    margin-top: 20px;
 }
 
 #mcmenu div.dropdown  {
     text-align:center;
+
 }
 
 /* each column */
@@ -648,7 +661,7 @@ body {
 }
 
 #mcmenu #menu-community .dropdown a {
-    padding-left: 65px;
+    /*padding-left: 65px;*/
 
 }
 #mcmenu.mobile li:nth-child(1) {
@@ -666,8 +679,7 @@ body {
     border-radius:0;
     box-shadow:none;
     background: white;
-    padding-top: 20px;
-
+    padding-top: 10px;
 }
 
 #mcmenu.mobile .clm{
@@ -679,12 +691,16 @@ body {
     background: white;
     border-bottom: 1.5px solid #ccc;
     padding-bottom: 20px;
+
 }
 #mcmenu.mobile .clm .line{
     display: none;
 }
-
-/*----------- menu-icon ----------------*/
+#mcmenu.mobile .right0{
+    height: 200px;
+    padding-left: 50px;
+}
+    /*----------- menu-icon ----------------*/
 .menu-icon-wrapper {
     padding:4px;
     text-align:left;
@@ -787,6 +803,11 @@ body {
 }
 @media (max-width: 1000px) {
     #mcmenu .top-item {
-        padding: 10px 0 10px 100px;  /* Adjust the second value to change horizontal spacing */
+        padding: 20px 0 10px 100px;  /* Adjust the second value to change horizontal spacing */
+    }
+}
+@media (min-width: 700px) and (max-width: 920px) {
+    .background-gallery {
+        display: none !important;
     }
 }
