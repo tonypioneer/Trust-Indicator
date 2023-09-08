@@ -49,13 +49,13 @@ window.addEventListener('scroll', function() {
 });
 
 function toggleDropdown(event) {
-    event.stopPropagation();  // 阻止事件冒泡
+    event.stopPropagation();
 
     const dropdown = document.getElementById('language-options');
     const signInContent = document.querySelector('.sign-in-content');
     if(dropdown.classList.contains('hidden')) {
         dropdown.classList.remove('hidden');
-        signInContent.style.display = 'none';  // 隐藏登录内容
+        signInContent.style.display = 'none';  
     } else {
         dropdown.classList.add('hidden');
     }
