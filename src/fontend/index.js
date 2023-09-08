@@ -55,7 +55,7 @@ function toggleDropdown(event) {
     const signInContent = document.querySelector('.sign-in-content');
     if(dropdown.classList.contains('hidden')) {
         dropdown.classList.remove('hidden');
-        signInContent.style.display = 'none';  
+        signInContent.style.display = 'none';
     } else {
         dropdown.classList.add('hidden');
     }
@@ -66,8 +66,6 @@ function updateLanguage(code, event) {
     selectedLanguage.textContent = code;
     const dropdown = document.getElementById('language-options');
     dropdown.classList.add('hidden');
-
-    // 阻止事件冒泡，避免触发.language-change的onclick事件
     event.stopPropagation();
 }
 
