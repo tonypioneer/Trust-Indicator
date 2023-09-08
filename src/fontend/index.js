@@ -115,9 +115,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ul.appendChild(community);
         }
     }
-    // 当文档加载时运行
     rearrangeMenu();
-    // 当窗口大小更改时再次运行
     window.addEventListener('resize', rearrangeMenu);
 });
 
