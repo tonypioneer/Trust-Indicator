@@ -1822,8 +1822,22 @@ body {
 
 .fake-gallery{
     width: 100%;
-    height: 400px;
+    height: auto;
     margin-top: 4%;
+}
+@media (max-width: 800px) {
+    /* 允许主容器的高度自动扩展，并使其子元素垂直排列 */
+    .fake-gallery{
+        flex-direction: column;
+        align-items: center; /* 为了让子元素在容器中居中 */
+        height: auto;  /* 允许高度自动扩展 */
+    }
+    /* 设置子元素宽度为 80% 并且高度为 300px */
+    #ninja-slider{
+        width: 80%;
+        height: auto;
+        margin-top: 30px;  /* 添加一些上边距，使内容不会与顶部贴得太紧 */
+    }
 }
 .fake-title{
     height: 50px;
@@ -2205,5 +2219,64 @@ body {
     #thumbnail-slider-prev, #thumbnail-slider-next {
         display:none;
     }
+}
+
+
+.bottom-navigation-bar{
+    width: 100%;
+    height: 80px;
+    background: #333333 ;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.connect-container{
+    height: 60%;
+    width: 500px;
+    background: #404040;
+    position: absolute;
+    top: -30%;
+    display: inline-block;
+    right: 0;
+    z-index: 1;
+}
+.accessibility-container{
+    height: 50%;
+    bottom: 0;
+    background:#333333;
+    position: absolute;
+    width: 100%;
+}
+.connect-table th, .connect-table td {
+    padding: 8px;
+    text-align: center;
+}
+
+.connect-table th:first-child, .connect-table td:first-child {
+    width: 30%;
+}
+
+.connect-table th:not(:first-child), .connect-table td:not(:first-child) {
+    width: 16%;
+}
+.accessibility{
+    width: 500px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+.site-link1,
+.site-link,
+.disclaimer-text {
+    margin: 0 10px;
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+    font-size: 3px;
+    opacity: 0.7;
+}
+
+.site-link1:hover, .disclaimer-text:hover{
+    border-bottom: 1px solid #ffffff;
 }
 
