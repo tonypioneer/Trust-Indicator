@@ -1,6 +1,9 @@
 function top_register(){
     window.location.href="signup.html"
 }
+function background_register(){
+    window.location.href="signup.html"
+}
 
 document.addEventListener('click', function(event) {
     const signInDiv = document.querySelector('.login-container');
@@ -119,3 +122,44 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('resize', rearrangeMenu);
 });
 
+let currentSlide = 0;
+
+function slide(direction) {
+    const gallery = document.getElementById('gallery');
+    const divs = gallery.children;
+    let visibleDivs = 5;
+
+    // Calculate the margin in pixels (3% of gallery width)
+    const marginRightPixels = 0.03 * gallery.clientWidth;
+
+    // Combine the width of the div and the margin to get the total width per div
+    let divWidth = divs[0].getBoundingClientRect().width + marginRightPixels;
+
+    // Logic for smaller screens
+    if (window.innerWidth <= 950) {
+        visibleDivs = 3;
+        // If there are any different specifications for smaller screens, adjust here
+    }
+
+    if (direction === 'left' && currentSlide > 0) {
+        currentSlide--;
+    } else if (direction === 'right' && currentSlide < divs.length - visibleDivs) {
+        currentSlide++;
+    }
+
+    gallery.style.transform = `translateX(-${currentSlide * divWidth}px)`;
+}
+// Fix for screen resize
+window.addEventListener('resize', function() {
+    const gallery = document.getElementById('gallery');
+    const divs = gallery.children;
+
+    // Calculate the margin in pixels (3% of gallery width)
+    const marginRightPixels = 0.03 * gallery.clientWidth;
+
+    // Combine the width of the div and the margin to get the total width per div
+    const divWidth = divs[0].getBoundingClientRect().width + marginRightPixels;
+
+    // Update the transform position of the gallery
+    gallery.style.transform = `translateX(-${currentSlide * divWidth}px)`;
+});

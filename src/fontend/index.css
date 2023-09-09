@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+
 }
 .top-title{
     width: 100%;
@@ -806,5 +807,536 @@ body {
 @media (min-width: 700px) and (max-width: 920px) {
     .background-gallery {
         display: none !important;
+    }
+}
+
+.top-trust-indicate-container{
+    position: absolute;
+    top: 170px;
+    right: 15%;
+    width: 350px;
+    height: 280px;
+    z-index: 2;
+    /*clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%);*/
+    border-radius: 30px;
+    background: rgba(0, 70, 127, 0.8);
+}
+
+.register-button {
+    width: 60%;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    border: 5px solid #00467F;
+    cursor: pointer;
+    font-weight: bolder;
+    display: inline-block;
+    padding-left: 15px;
+
+}
+.register-button-color{
+    color: #00467F;
+}
+.register-button-background-color{
+    background-color: #ffffff;
+}
+.register-button-color:hover{
+    color: #ffffff;
+}
+.register-button-background-color:hover{
+    border: 2px solid #ffffff;
+    background-color: #00467F;
+}
+
+.register-button:hover .fa-chevron-right{
+    animation: move-right 0.7s infinite linear;
+}
+
+.picture-upload-recognition-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 450px;
+    margin-top: 100px;
+    flex-direction: row;
+    position: relative;
+}
+.picture-upload-recognition {
+    width: 28%;
+    height: 420px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 4%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    overflow: visible;
+}
+
+.picture-hub-picture {
+    height: 250px;
+    width: 90%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 20px;
+    position: relative;
+    background-image: url("picture-hub-picture.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 700px;
+}
+
+.picture-hub-title {
+    background: #ffffff;
+    color: #00467F;
+    height: 30px;
+    width: 60%;
+    max-width: 180px;
+    z-index: 2;
+    position: relative;
+    top: 155px;
+    left: -10px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+.picture-hub-content {
+    background: #0080A7;
+    width: 90%;
+    height: 200px;
+    left: 5px;
+    position: relative;
+    top: 155px;
+}
+.find-out-more-button {
+    width: 50%;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    border: 5px solid #0080A7;
+    cursor: pointer;
+    font-weight: bolder;
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 25%;
+    margin-top: 5%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.find-out-more-button-color{
+    color: #00467F;
+}
+.find-out-more-button-background-color{
+    background-color: #ffffff;
+}
+.find-out-more-button-color:hover{
+    color: #ffffff;
+}
+.find-out-more-button-background-color:hover{
+    border: 2px solid #ffffff;
+    background-color: #0080A7;
+}
+.recognition-picture {
+    height: 250px;
+    width: 90%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 20px;
+    position: relative;
+    background-image: url("recognition-picture.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 700px;
+}
+
+.recognition-title {
+    background: #ffffff;
+    color: #00467F;
+    height: 30px;
+    width: 60%;
+    max-width: 180px;
+    z-index: 2;
+    position: relative;
+    top: 155px;
+    right: 10px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+.recognition-content {
+    background: #0080A7;
+    width: 90%;
+    height: 200px;
+    right: 25px;
+    position: relative;
+    top: 155px;
+}
+
+.card {
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 70%;
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+
+    transition: all 0.2s;
+    cursor: pointer;
+    margin-top: 50px;
+    box-shadow: 0px 0px 5px -1.5px #000;
+    max-width: 300px;
+}
+
+.card::before {
+    content: '';
+    width: 99%;
+    height: 99%;
+    background:#009AC9;
+    position: absolute;
+    z-index: -1;
+    top: 1px;
+    left: 1px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.card__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__img {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.card__title {
+    color: #00467F;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.card__subtitle {
+    color: #00467F;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card__icon {
+    width: 40px;
+    height: 40px;
+    transform: rotate(-45deg);
+    transition: all 0.3s;
+}
+
+.card__icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.card__icon g {
+    fill: #00467F;
+}
+
+.card__icon circle, polyline, line {
+    stroke: #00467F;
+}
+
+.card:hover .card__icon {
+    transform: rotate(0);
+}
+
+.card:hover .card__icon circle, .card:hover .card__icon polyline, .card:hover .card__icon line {
+    stroke: #0080A7;
+}
+
+.card:hover .card__icon g {
+    fill: #0080A7;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 20px -5px #000;
+}
+
+.card:hover::before {
+    transform: rotate(10deg);
+    box-shadow: 0px 0px 20px -5px #000;
+}
+
+/* remove svg from class ="card__img" and last styles below css code before use */
+.st1 {
+    fill: #fff
+}
+.st2 {
+    fill: none;
+    stroke: #242c88;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10
+}
+.st7 {
+    fill: #00467F;
+}
+.st9 {
+    fill: #bc8d66
+}
+.st15,.st16 {
+    opacity: .4;
+    fill: #242c88
+}
+.st16 {
+    opacity: .2
+}
+.st18 {
+    fill: #00467F;
+}
+.st53 {
+    fill: none;
+    stroke: #242c88;
+    stroke-width: 1.848;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10
+}
+@media (max-width: 800px) {
+    .picture-upload-recognition-container {
+        flex-direction: column;  /* 使子元素垂直堆叠 */
+        height: auto;            /* 移除固定高度，以适应子元素 */
+    }
+
+    .picture-upload-recognition {
+        width: 80%;             /* 充满整个容器 */
+        /* 移除左边距，使其居中 */
+        margin-top: 10px;        /* 您可以根据需要调整这个上边距 */
+        margin-left: 10%;
+    }
+}
+
+
+
+.top-10-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative; /* This will ensure the half arrow is not cut off */
+    height: 450px;
+    background: #eeeeee;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;  /* Arrange children in a column */
+    align-items: center;
+}
+.top-10-container > div:first-child {
+    width: 90%;
+    height:50px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #00467F;
+    font-weight: bolder;
+    align-items: center;  /* Vertically center the text or content */
+    /* Horizontally center the text or content */
+    display: flex;
+    margin-left: -7%;
+}
+.top-10-container:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;  /* Adjust the thickness of the line as needed */
+    height: 20%; /* The line height is 10% of the .top-10-container */
+    background-color: #FFCD29;  /* Adjust the color of the line */
+}
+.gallery-wrapper {
+    width: 90%;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    max-width: calc(5 * (280px + 1%));
+    height: 350px;
+}
+
+.control-left-wrapper, .control-right-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0080A7;
+    width: 3.5%;
+    margin-left:0.75%;
+    margin-right:0.75%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+.control-left-wrapper {
+    left: 0;
+    color: #FFFFFF;
+}
+
+.control-right-wrapper {
+    right: 2%;
+    color: #FFFFFF;
+}
+
+.control-show-picture {
+    background-color: transparent;
+    border: none;
+    font-size: 3vw;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.control-show-picture:hover {
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite;
+}
+@keyframes scale-up-center {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.gallery {
+    display: flex;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    height: 400px;
+}
+.gallery-container {
+    flex: 0 0 calc(20% - 3%);
+    margin-right: 3%;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+
+}
+.photo-div {
+    height: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: #FFFFFF;
+}
+.photo-div img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.info-div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* adjust as necessary */
+    height: 60%;
+    background: #FFFFFF;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    height: 15%;
+    font-size: 1.3rem;
+    color: #00467F;
+    border-bottom: 2px dotted #00467F;
+}
+
+.message {
+    height: 10%;
+    overflow: hidden;
+    color: #00467F;
+    margin-bottom: 2%;
+}
+
+.watch-list, .analysis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13%;
+    margin-bottom: 10%;
+    color: #00467F;
+}
+.watch-list:hover, .analysis:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+    color: #C4362E;
+
+}
+.fa-star{
+    color: #FFCD29;
+}
+/* Adjustments for smaller screens */
+@media (max-width: 950px) {
+    .gallery > div {
+        flex: 0 0 calc(33.33% - 3%);
+        margin-right: 3%;
+    }
+}
+
+.question-jpeg-container{
+    background: #00467F;
+    height: 300px;
+    width: 100%;
+    display: flex;
+}
+
+.question-container{
+    width: 35%;
+    height: 300px;
+    background-color: #CB2821;
+    opacity: 0.9;
+    border-radius: 10px;
+    margin-left: 10%;
+    position: relative;
+    display: flex;
+}
+
+
+.jpeg-metadata-container {
+    display: flex;
+    width: 40%;
+    background: #FFFFFF;
+    height: 300px;
+    margin-left: 5%;
+    /* You can add more styles as per your requirement */
+}
+@media (max-width: 800px) {
+    /* 允许主容器的高度自动扩展，并使其子元素垂直排列 */
+    .question-jpeg-container{
+        flex-direction: column;
+        align-items: center; /* 为了让子元素在容器中居中 */
+        height: auto;  /* 允许高度自动扩展 */
+        padding-bottom: 60px;
+    }
+
+
+    /* 设置子元素宽度为 80% 并且高度为 300px */
+    .question-container,
+    .jpeg-metadata-container {
+        width: 80%;
+        height: 300px;
+        margin-top: 30px;  /* 添加一些上边距，使内容不会与顶部贴得太紧 */
     }
 }
