@@ -2055,7 +2055,7 @@ body {
     opacity:0.8;
     margin:4px auto; /*center-aligned*/
     width:100%;
-    max-width:780px;
+    max-width:550px;
     padding:70px 40px;/*Gives room for arrow buttons*/
     box-sizing:border-box;
     position:relative;
