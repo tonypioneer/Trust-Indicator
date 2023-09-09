@@ -1227,7 +1227,6 @@ body {
     flex: 0 0 calc(20% - 3%);
     margin-right: 3%;
     height: 400px;
-
     display: flex;
     flex-direction: column;
     max-width: 280px;
@@ -1296,32 +1295,177 @@ body {
 }
 
 .question-jpeg-container{
-    background: #00467F;
-    height: 300px;
+    height: 450px;
     width: 100%;
     display: flex;
+    overflow: visible; /* 保证超出的部分可见 */
+    margin-top: 3%;
 }
 
 .question-container{
     width: 35%;
-    height: 300px;
-    background-color: #CB2821;
-    opacity: 0.9;
+    height: 450px;
     border-radius: 10px;
     margin-left: 10%;
     position: relative;
     display: flex;
+    overflow: visible;
+    flex-direction: column;
+    max-width: 600px;
 }
 
+.div1 {
+    width: 40%;
+    height: 45px;
+    background: #00467F; /* 为了可见性 */
+    position: relative;
+    top: calc(50% - 200px); /* 考虑到div2和div3的高度及其覆盖，进行位置调整 */
+    z-index: 3;
+    left: 3%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    color: #FFFFFF;
 
+}
+
+.div2 {
+    width: 80%;
+    height: 180px;
+    background: #0080A7; /* 为了可见性 */
+    position: relative;
+    top: calc(50% - 220px); /* 将div2稍微向上移动，以保持在容器中间 */
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-left:10px;
+    padding-right:10px;
+    color: #FFFFFF;
+    font-weight: 300;
+}
+
+.div3 {
+    width: 80%;
+    height: 180px;
+    background: #eeeeee; /* 为了可见性 */
+    position: relative;
+    top: calc(50% - 100px - 140px); /* 让div3在div2下面，并保持其中30%覆盖在div2的右下角 */
+    z-index: 2;
+    left: 20%;
+    align-items: center;
+}
+.question-input{
+    background-color: #F2F2F2;
+    width: 60%;
+    height: 30%;
+    margin-top: 3%;
+    margin-left: 10%;
+    float: left;
+    font-size: 1.5vw;
+
+}
+.question-button{
+    width: 15%;
+    height: 31%;
+    float: left;
+    margin-top: 3%;
+    margin-right: 5%;
+    background-color: #00467F;
+    color: #F2F2F2;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.question-button:hover{
+    animation: slide-fwd-center 0.8s infinite;
+    background-color: #F2F2F2;
+    color: #636363;
+}
+.top-question-text1{
+    font-size: 15px;
+    /*padding:5%;*/
+    padding-top: 5%;
+    padding-left: 5%;
+    font-weight: bolder;
+    font-style: italic;
+    color: #000000;
+}
+.top-question-text2{
+    font-size: 15px;
+    padding-left: 7%;
+    color: #00467F;
+
+}
 .jpeg-metadata-container {
     display: flex;
     width: 40%;
-    background: #FFFFFF;
-    height: 300px;
-    margin-left: 5%;
-    /* You can add more styles as per your requirement */
+    height: 450px;
+    margin-left: 4%;
+    margin-top: -3%;
 }
+
+.company-photo{
+    float: left;
+    width: 100%;
+    height: 450px;
+    margin-left: 2%;
+}
+
+.household{
+    width: 47%;
+    height: 440px;
+    margin-top: 5px;
+    background-color: #FFFFFF;
+    margin-left: 2%;
+    margin-right: 1%;
+    float: left;
+    box-shadow: 2px 5px 4px 4px #F1F1F1;
+    max-width: 300px;
+}
+.household-image{
+    width: 100%;
+    height: 40%;
+}
+.image-title{
+    width: 70%;
+    height: 50px;
+    background-color: #00467F;
+    position: relative;
+    top:-10%;
+    color: #F2F2F2;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    opacity: 0.9;
+}
+.household-text{
+    width: 90%;
+    height: 40%;
+    margin-left: 4%;
+    margin-top: -8%;
+    font-size: 17px;
+    color: #00467F;
+    overflow: hidden;
+}
+.household-button{
+    width: 100%;
+    height: 45px;
+    /*background-color: #CB2821;*/
+    margin-top: 8%;
+    text-align: center;
+    line-height: 45px;
+    /*line-height: ;*/
+    font-size: 20px;
+    color: #00467F;
+    font-weight: bolder;
+    overflow: hidden;
+}
+.household-button:hover{
+    animation: move-right 0.7s infinite linear;
+}
+
 @media (max-width: 800px) {
     /* 允许主容器的高度自动扩展，并使其子元素垂直排列 */
     .question-jpeg-container{
@@ -1330,13 +1474,736 @@ body {
         height: auto;  /* 允许高度自动扩展 */
         padding-bottom: 60px;
     }
-
-
     /* 设置子元素宽度为 80% 并且高度为 300px */
     .question-container,
     .jpeg-metadata-container {
         width: 80%;
-        height: 300px;
+        height: 450px;
         margin-top: 30px;  /* 添加一些上边距，使内容不会与顶部贴得太紧 */
     }
 }
+
+.exhibition-container{
+    width: 100%;
+    height: 350px;
+    background-image: url("gallery-background.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;  /* 水平居中 */
+    align-items: center;      /* 垂直居中 */
+    flex-direction: column;
+}
+.exhibition-card {
+    width: 300px;
+    border-radius: 20px;
+    background: #00467F;
+    margin-left: 30%;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.exhibition-card:hover {
+    transform: scale(1.05);
+}
+
+.exhibition-card .exhibition-top-section {
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, #006B91 0%, #0093BD 100%);
+    position: relative;
+}
+
+.exhibition-card .exhibition-top-section .exhibition-border {
+    border-bottom-right-radius: 10px;
+    height: 30px;
+    width: 130px;
+    background: #1b233d;
+    position: relative;
+    transform: skew(-40deg);
+    box-shadow: -10px -10px 0 0 #1b233d;
+}
+
+.exhibition-card .exhibition-top-section .exhibition-border::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    right: -15px;
+    background: rgba(255, 255, 255, 0);
+    border-top-left-radius: 10px;
+    box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.exhibition-card .exhibition-top-section::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: rgba(255, 255, 255, 0);
+    height: 15px;
+    width: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.exhibition-card .exhibition-top-section .exhibition-icons {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.exhibition-card .exhibition-top-section .exhibition-icons .exhibition-logo {
+    height: 100%;
+    aspect-ratio: 1;
+    padding: 0 0 7px 15px;
+    color: #FFFFFF;
+    font-size: 20px;
+    white-space: nowrap;
+}
+.exhibition-card .exhibition-top-section .exhibition-icons .exhibition-logo .exhibition-top-section {
+    height: 100%;
+}
+
+.exhibition-card .exhibition-top-section .exhibition-icons .exhibition-social-media {
+    height: 100%;
+    padding: 8px 15px;
+    display: flex;
+    gap: 7px;
+}
+
+.exhibition-card .exhibition-top-section .exhibition-icons .exhibition-social-media .exhibition-svg {
+    height: 100%;
+    fill: #1b233d;
+}
+
+.exhibition-card .exhibition-top-section .exhibition-icons .exhibition-social-media .exhibition-svg:hover {
+    fill: white;
+}
+
+.exhibition-card .exhibition-bottom-section {
+    margin-top: 15px;
+    padding: 10px 5px;
+}
+
+.exhibition-card .exhibition-bottom-section .title {
+    display: block;
+    font-size: 17px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.exhibition-card .exhibition-bottom-section .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.exhibition-card .exhibition-bottom-section .row .item {
+    flex: 30%;
+    text-align: center;
+    padding: 5px;
+    color: rgba(170, 222, 243, 0.721);
+}
+
+.exhibition-card .exhibition-bottom-section .row .item .big-text {
+    font-size: 12px;
+    display: block;
+}
+
+.exhibition-card .exhibition-bottom-section .row .item .regular-text {
+    font-size: 9px;
+}
+
+.exhibition-card .exhibition-bottom-section .row .item:nth-child(2) {
+    border-left: 1px solid rgba(255, 255, 255, 0.126);
+    border-right: 1px solid rgba(255, 255, 255, 0.126);
+}
+@media (max-width: 800px) {
+    /* 允许主容器的高度自动扩展，并使其子元素垂直排列 */
+    .exhibition-container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center; /* 为了让子元素在容器中居中 */
+        height: auto;  /* 允许高度自动扩展 */
+        padding-bottom: 60px;
+    }
+    /* 设置子元素宽度为 80% 并且高度为 300px */
+    .exhibition-card {
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+}
+.bottom-register-example-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    overflow: visible; /* 保证超出的部分可见 */
+    margin-top: 3%;
+}
+.bottom-register{
+    width: 45%;
+    height: 400px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 4%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    max-width: 600px;
+}
+
+.bottom-register-picture {
+    height: 250px;
+    width: 90%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 20px;
+    position: relative;
+    background-image: url("picture-hub-picture.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 700px;
+}
+
+.bottom-register-title {
+    background: #ffffff;
+    color: #00467F;
+    height: 30px;
+    width: 60%;
+    max-width: 180px;
+    z-index: 2;
+    position: relative;
+    top: 155px;
+    left: 20px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+.bottom-register-content {
+    background: #0080A7;
+    width: 80%;
+    height: 180px;
+    left: -4%;
+    position: relative;
+    top: 140px;
+}
+.find-out-more-button {
+    width: 50%;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    border: 5px solid #0080A7;
+    cursor: pointer;
+    font-weight: bolder;
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 25%;
+    margin-top: 5%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.find-out-more-button-color{
+    color: #00467F;
+}
+.find-out-more-button-background-color{
+    background-color: #ffffff;
+}
+.find-out-more-button-color:hover{
+    color: #ffffff;
+}
+.find-out-more-button-background-color:hover{
+    border: 2px solid #ffffff;
+    background-color: #0080A7;
+}
+
+.bottom-example-container {
+    display: flex;
+    width: 40%;
+    height: 400px;
+    margin-left: 4%;
+}
+
+.bottom-example{
+    float: left;
+    width: 100%;
+    height: 400px;
+    margin-left: 2%;
+}
+
+.example{
+    width: 47%;
+    height: 400px;
+    margin-top: 5px;
+    background-color: #FFFFFF;
+    margin-left: 2%;
+    margin-right: 1%;
+    float: left;
+    box-shadow: 2px 5px 4px 4px #F1F1F1;
+    max-width: 250px;
+}
+.example-image{
+    width: 100%;
+    height: 150px;
+}
+.example-title{
+    width: 70%;
+    height: 30px;
+    background-color: #00467F;
+    position: relative;
+    top:-7%;
+    color: #F2F2F2;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    opacity: 0.9;
+}
+.example-text{
+    width: 90%;
+    height: 180px;
+    font-weight: bolder;
+    margin-left: 4%;
+    margin-top: -8%;
+    font-size: 18px;
+    color: #00467F;
+    overflow: hidden;
+}
+.example-button{
+    width: 100%;
+    height: 30px;
+    /*background-color: #CB2821;*/
+    margin-top: 3%;
+    text-align: center;
+    line-height: 30px;
+    /*line-height: ;*/
+    font-size: 20px;
+    color: #00467F;
+    font-weight: bolder;
+    overflow: hidden;
+}
+.example-button:hover{
+    animation: move-right 0.7s infinite linear;
+}
+@media (max-width: 800px) {
+    /* 允许主容器的高度自动扩展，并使其子元素垂直排列 */
+    .bottom-register-example-container{
+        flex-direction: column;
+        align-items: center; /* 为了让子元素在容器中居中 */
+        height: auto;  /* 允许高度自动扩展 */
+    }
+    /* 设置子元素宽度为 80% 并且高度为 300px */
+    .bottom-register,
+    .bottom-example-container {
+        width: 80%;
+        height: 400px;
+        margin-top: 30px;  /* 添加一些上边距，使内容不会与顶部贴得太紧 */
+    }
+}
+
+.fake-gallery{
+    width: 100%;
+    height: 400px;
+    margin-top: 4%;
+}
+.fake-title{
+    height: 50px;
+    text-align:left;
+    line-height: 50px;
+    font-size: 24px;
+    color: #00467F;
+    font-weight: bolder;
+    align-items: center;  /* Vertically center the text or content */
+    /* Horizontally center the text or content */
+    display: flex;
+    padding-left: 2%;
+}
+
+#ninja-slider {
+    width:100%;
+    background:#eeeeee;
+    padding-bottom:10px;
+    margin:0 auto;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+#ninja-slider.fullscreen {
+    background:black;
+}
+
+#ninja-slider.fullscreen #ninja-slider-prev {
+    left: -50px;
+}
+#ninja-slider.fullscreen #ninja-slider-next {
+    right: -50px;
+}
+
+
+#ninja-slider .fs-icon {
+    top:0px;
+    right:0px;
+    width:45px;
+    height:45px;
+    background: rgba(0,0,0,0.1) url(fullscreen.png) no-repeat 0 0;
+    z-index:2;
+    opacity:0;
+    -webkit-transition:opacity 0.8s;
+    transition:opacity 0.8s;
+}
+
+#ninja-slider:hover .fs-icon {
+    opacity: 1;
+}
+
+#ninja-slider.fullscreen .fs-icon {
+    background-position: center -45px;
+    opacity:1;
+}
+
+#ninja-slider .slider-inner {
+    max-width:1000px;
+    margin:0 auto;/*center-aligned*/
+    font-size:0px;
+    position:relative;
+    box-sizing:border-box;
+
+}
+
+#ninja-slider.fullscreen .slider-inner {
+    max-width:900px;
+    max-height:90%;
+}
+
+#ninja-slider ul {
+    /*overflow:hidden;*/
+    position:relative;
+    list-style:none;
+    padding:0;
+    box-sizing:border-box;
+}
+
+#ninja-slider li {
+    background-color:white;
+    width:100%;
+    height:130%;
+    top:0;
+    left:0;
+    position: absolute;
+    font-size:12px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    opacity:0;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+#ninja-slider li.ns-show {
+    opacity:1;
+}
+
+
+
+/* --------- slider image ------- */
+#ninja-slider .ns-img {
+    background-color:#eeeeee;
+    background-size:contain;/*Note: If transitionType is zoom, it will be overridden to cover.*/
+    border-radius:3px;
+    cursor:default;
+    display:block;
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+
+/* ---------Arrow buttons ------- */
+/* The arrow button id should be: slider id + ("-prev", "-next", and "-pause-play") */
+#ninja-slider-pause-play { display:none;}
+
+#ninja-slider-prev, #ninja-slider-next
+{
+    position: absolute;
+    display:inline-block;
+    width:42px;
+    height:56px;
+    line-height:56px;
+    top: 50%;
+    margin-top:-28px;
+    background-color:#0080A7;
+    background-color:#0080A7\9;/*IE8 hack*/
+    backface-visibility:hidden;
+    color:#FFFFFF;
+    overflow:hidden;
+    white-space:nowrap;
+    -webkit-user-select: none;
+    user-select:none;
+    border-radius:2px;
+    z-index:10;
+
+    font-family:sans-serif;
+    font-size:13px;
+    cursor:pointer;
+    -webkit-transition:all 0.7s;
+    transition:all 0.7s;
+}
+
+.slider-inner:hover #ninja-slider-prev, .slider-inner:hover #ninja-slider-next {
+    opacity:1;
+}
+
+
+#ninja-slider-prev {
+    left: 0;
+}
+#ninja-slider-next {
+    right: 0;
+}
+
+/* arrows */
+#ninja-slider-prev::before, #ninja-slider-next::before {
+    position: absolute;
+    top: 17px;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+}
+
+#ninja-slider-prev::before {
+    -ms-transform:rotate(-45deg);/*IE 9*/
+    -webkit-transform:rotate(-45deg);
+    transform: rotate(-45deg);
+    backface-visibility:hidden;
+    right:4px;
+}
+
+#ninja-slider-next::before {
+    -ms-transform:rotate(135deg);/*IE 9*/
+    -webkit-transform:rotate(135deg);
+    transform: rotate(135deg);
+    backface-visibility:hidden;
+    left:4px;
+}
+
+
+/*pagination num within the arrow buttons*/
+#ninja-slider-prev div, #ninja-slider-next div {display:none;}
+
+
+/*------ pager(nav bullets) ------*/
+/* The pager id should be: slider id + "-pager" */
+#ninja-slider-pager { display:none;}
+
+
+#ninja-slider-pager, #ninja-slider-prev, #ninja-slider-next, #ninja-slider-pause-play
+{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+/*Responsive settings*/
+@media only screen and (max-width:800px){
+
+    #ninja-slider .fs-icon {
+        display:none;
+    }
+}
+#thumbnail-slider {
+    transform:scale(1.5);
+    transition:transform 0.25s;
+    opacity:0.8;
+    margin:4px auto; /*center-aligned*/
+    width:100%;
+    max-width:780px;
+    padding:70px 40px;/*Gives room for arrow buttons*/
+    box-sizing:border-box;
+    position:relative;
+    -webkit-user-select: none;
+    user-select:none;
+}
+
+#thumbnail-slider:hover {
+
+    transform:scale(1.8);
+    opacity:1;
+}
+
+#ninja-slider.fullscreen #thumbnail-slider {
+    width:90%;
+    max-width:1120px;
+}
+
+#thumbnail-slider div.inner {
+    /*the followings should not be changed */
+    position:relative;
+    overflow:hidden;
+    padding:2px 0;
+    margin:0;
+}
+
+
+#thumbnail-slider div.inner ul {
+
+    /*the followings should not be changed */
+    white-space:nowrap;
+    position:relative;
+    left:0; top:0;
+    list-style:none;
+    font-size:0;
+    padding:0;
+    margin:0;
+    float:left!important;
+    width:auto!important;
+    height:auto!important;
+}
+
+#thumbnail-slider ul li {
+    opacity:1;
+    overflow:visible;
+    display:inline-block;
+    *display:inline!important; /*IE7 hack*/
+    border:2px solid #222;
+    margin:0 4px;/* Spacing between thumbs*/
+    box-sizing:content-box;
+
+    text-align:center;
+    vertical-align:middle;
+    padding:0;
+    position:relative;
+    list-style:none;
+    backface-visibility:hidden;
+
+    transition:all 0.2s;
+    -webkit-transform:scale(1);
+    transform:scale(1);
+}
+
+#thumbnail-slider ul li.active {
+    border-color:white;
+}
+
+#thumbnail-slider li:hover {
+    border-color:rgba(255,255,255,0.7);
+}
+
+
+#thumbnail-slider .thumb {
+    width:100%;
+    height: 100%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center center;
+    display:block;
+    position:absolute;
+    font-size:0;
+}
+
+
+/* --------- Captions ------- */
+#thumbnail-slider li > span {
+    position:absolute;
+    color:rgba(255,255,255,0.7);
+    font-size:22px;
+    bottom:2px;
+}
+
+
+/* --------- navigation controls ------- */
+/* The nav id should be: slider id + ("-prev", "-next", and "-pause-play") */
+
+#thumbnail-slider-pause-play {display:none;} /*.pause*/
+
+#thumbnail-slider-prev, #thumbnail-slider-next
+{
+    position: absolute;
+    background-color:none;
+    width:40px;
+    height:50px;
+    line-height:50px;
+    top: 50%;
+    margin:0;
+    margin-top:-25px;
+    color:#00467F;
+    z-index:10;
+    cursor:pointer;
+    opacity:1;
+    *background-color:#00467F;/*IE7 hack*/
+}
+
+#thumbnail-slider-prev {
+    left:0px; right:auto;
+}
+
+#thumbnail-slider-next {
+    left:auto; right:0px;
+}
+#thumbnail-slider-next.disabled, #thumbnail-slider-prev.disabled {
+    opacity:0.3;
+    cursor:default;
+}
+
+/* arrows */
+#thumbnail-slider-prev::before, #thumbnail-slider-next::before {
+    position: absolute;
+    top: 15px;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-left: 3px solid #00467F;
+    border-top: 3px solid #00467F;
+}
+
+#thumbnail-slider-prev::before {
+    left:14px;
+    -ms-transform:rotate(-45deg);/*IE9*/
+    -webkit-transform:rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#thumbnail-slider-next::before {
+    right:14px;
+    -ms-transform:rotate(135deg);/*IE9*/
+    -webkit-transform:rotate(135deg);
+    transform: rotate(135deg);
+}
+
+/*Responsive settings*/
+@media only screen and (max-width:736px){
+
+    #thumbnail-slider {
+        display:none;
+    }
+
+    #thumbnail-slider-prev, #thumbnail-slider-next {
+        display:none;
+    }
+}
+
