@@ -117,5 +117,121 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     rearrangeMenu();
     window.addEventListener('resize', rearrangeMenu);
+
+    // when drag and drop, show preview image
+    document.getElementById('file-input').addEventListener('change', function(event) {
+        if (event.target.files.length > 0) {
+            const file = event.target.files[0];
+            previewImage(file);
+        }
+    });
+    var dropBox = document.querySelector('.drop-box');
+    var fileInput = document.getElementById('file-input');
+    // Add event listeners for drag and drop
+    ['dragenter', 'dragover'].forEach(eventName => {
+        dropBox.addEventListener(eventName, preventDefaults, false);
+    });
+
+    ['drop'].forEach(eventName => {
+        dropBox.addEventListener(eventName, handleDrop, false);
+    });
+    // Event listener for file input change
+    fileInput.addEventListener('change', handleFiles);
+    function preventDefaults(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+    ['dragenter', 'dragover', 'drop'].forEach(eventName => {
+        dropBox.addEventListener(eventName, preventDefaults, false);
+    });
+    function handleDrop(e) {
+        let dt = e.dataTransfer;
+        let files = dt.files;
+        handleFiles(files);
+    }
+    function handleFiles(files) {
+        if (files.length > 0) {
+            previewImage(files[0]);
+        }
+    }
+    function previewImage(file) {
+        let reader = new FileReader();
+        reader.onloadend = function() {
+            dropBox.style.backgroundImage = 'url(' + reader.result + ')';
+
+            dropBox.innerHTML = '<p>This is a preview image</p>';
+        }
+        if (file) {
+            reader.readAsDataURL(file);
+        }
+    }
+    // Clicking on the dropBox will trigger the hidden file input dialog
+    dropBox.addEventListener('click', function() {
+        fileInput.click();
+    });
+    // when drag and drop, show preview image
+
+
+    let styleStates = {
+        uppercase: false,
+        italic: false,
+        underline: false
+    };
+
+    document.querySelector('.btn-uppercase').addEventListener('click', function() {
+        toggleStyle('uppercase');
+    });
+
+    document.querySelector('.btn-italic').addEventListener('click', function() {
+        toggleStyle('italic');
+    });
+
+    document.querySelector('.btn-underline').addEventListener('click', function() {
+        toggleStyle('underline');
+    });
+
+    function toggleStyle(styleType) {
+        styleStates[styleType] = !styleStates[styleType];
+        applyStyle(styleType, styleStates[styleType]);
+    }
+
+    function applyStyle(styleType, apply) {
+        const editableDiv = document.getElementById('contentEditableDiv');
+        const selection = window.getSelection();
+        const selectedText = selection.toString();
+
+        let span = document.createElement('span');
+
+        switch (styleType) {
+            case 'uppercase':
+                if (apply) {
+                    span.innerText = selectedText.toUpperCase();
+                } else {
+                    span.innerText = selectedText.toLowerCase();
+                }
+                break;
+            case 'italic':
+                if (apply) {
+                    span.style.fontStyle = 'italic';
+                }
+                span.innerText = selectedText;
+                break;
+            case 'underline':
+                if (apply) {
+                    span.style.textDecoration = 'underline';
+                }
+                span.innerText = selectedText;
+                break;
+        }
+
+        if (span) {
+            selection.deleteFromDocument();
+            selection.getRangeAt(0).insertNode(span);
+        }
+    }
 });
+
+
+
+
 
