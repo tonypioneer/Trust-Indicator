@@ -21,7 +21,8 @@ namespace Trust_Indicator.Data
         // Login
         public bool ValidLogin(string email, string password)
         {
-            return _dbContext.Users.Any(e => e.Email == email && e.Password == password);
+            User user = _dbContext.Users.FirstOrDefault(u => u.Email == email);
+            return user.Password == password;
         }
         public bool IsAdmin(User user)
         {
@@ -29,7 +30,7 @@ namespace Trust_Indicator.Data
         }
 
         //User
-        IEnumerable<UserOutputDto> GetAllUsers()
+        public IEnumerable<UserOutputDto> GetAllUsers()
         {
             IEnumerable<User> users = _dbContext.Users.ToList();
             IEnumerable<UserOutputDto> allUserOutputs = users.Select(e =>
@@ -43,7 +44,7 @@ namespace Trust_Indicator.Data
                                         });
             return allUserOutputs;
         }
-        IEnumerable<UserOutputDto> GetUserByUsername(string username)
+        public IEnumerable<UserOutputDto> GetUserByUsername(string username)
         {
             IEnumerable<User> users = _dbContext.Users.Where(e => e.UserName.ToLower().Contains(username.ToLower()) || e.LegalName.ToLower().Contains(username.ToLower()));
             IEnumerable<UserOutputDto> findUsers = users.Select(e =>
@@ -57,29 +58,29 @@ namespace Trust_Indicator.Data
                                         });
             return findUsers;
         }
-        UserOutputDto GetUserByID(int id)
+        public UserOutputDto GetUserByID(int id)
         {
             User user = _dbContext.Users.First(e => e.UserID == id);
             return new UserOutputDto() { UserID = user.UserID, LegalName = user.LegalName, Email = user.Email, UserName = (user.UserName != null || user.UserName != "") ? user.UserName : user.LegalName, ProfilePhotoNO = user.ProfilePhotoNO };
         }
-        UserOutputDto GetUserByEmail(string email)
+        public UserOutputDto GetUserByEmail(string email)
         {
             User user = _dbContext.Users.First(e => e.Email == email);
             return new UserOutputDto() { UserID = user.UserID, LegalName = user.LegalName, Email = user.Email, UserName = (user.UserName != null || user.UserName != "") ? user.UserName : user.LegalName, ProfilePhotoNO = user.ProfilePhotoNO };
         }
-        UserOutputDto GetUserByLegalName(string legalName)
+        public UserOutputDto GetUserByLegalName(string legalName)
         {
             User user = _dbContext.Users.First(e => e.LegalName == legalName);
             return new UserOutputDto() { UserID = user.UserID, LegalName = user.LegalName, Email = user.Email, UserName = (user.UserName != null || user.UserName != "") ? user.UserName : user.LegalName, ProfilePhotoNO = user.ProfilePhotoNO };
         }
-        UserOutputDto AddUser(User user)
+        public UserOutputDto AddUser(User user)
         {
             EntityEntry<User> entry = _dbContext.Users.Add(user);
             User u = entry.Entity;
             _dbContext.SaveChanges();
             return new UserOutputDto() { UserID = u.UserID, LegalName = u.LegalName, Email = u.Email, UserName = (u.UserName != null || u.UserName != "") ? u.UserName : u.LegalName, ProfilePhotoNO = u.ProfilePhotoNO };
         }
-        UserOutputDto ChangeProfilePhoto(User user, string photo)
+        public UserOutputDto ChangeProfilePhoto(User user, string photo)
         {
             User u = _dbContext.Users.FirstOrDefault(e => e.UserID == user.UserID);
             u.ProfilePhotoNO = (photo != null || photo != "") ? photo : u.ProfilePhotoNO;
@@ -88,7 +89,7 @@ namespace Trust_Indicator.Data
             _dbContext.SaveChanges();
             return new UserOutputDto() { UserID = updateUser.UserID, LegalName = updateUser.LegalName, Email = updateUser.Email, UserName = (updateUser.UserName != null || updateUser.UserName != "") ? updateUser.UserName : updateUser.LegalName, ProfilePhotoNO = updateUser.ProfilePhotoNO };
         }
-        UserOutputDto ChangePassword(User user, string password)
+        public UserOutputDto ChangePassword(User user, string password)
         {
             User u = _dbContext.Users.FirstOrDefault(e => e.UserID == user.UserID);
             u.Password = (password != null || password != "" || password.Length < 12 || password.Length >= 6) ? password : u.Password;
@@ -97,7 +98,7 @@ namespace Trust_Indicator.Data
             _dbContext.SaveChanges();
             return new UserOutputDto() { UserID = updateUser.UserID, LegalName = updateUser.LegalName, Email = updateUser.Email, UserName = (updateUser.UserName != null || updateUser.UserName != "") ? updateUser.UserName : updateUser.LegalName, ProfilePhotoNO = updateUser.ProfilePhotoNO };
         }
-        UserOutputDto ChangeUserName(User user, string userName)
+        public UserOutputDto ChangeUserName(User user, string userName)
         {
             User u = _dbContext.Users.FirstOrDefault(e => e.UserID == user.UserID);
             u.ProfilePhotoNO = (userName != null || userName != "") ? userName : u.UserName;
@@ -108,7 +109,7 @@ namespace Trust_Indicator.Data
         }
 
         // Image
-        IEnumerable<ImageOutputDto> GetAllImages()
+        public IEnumerable<ImageOutputDto> GetAllImages()
         {
             IEnumerable<Model.Image> images = _dbContext.Images.ToList();
             IEnumerable<ImageOutputDto> allImageOutputs = images.Select(e =>
@@ -124,7 +125,7 @@ namespace Trust_Indicator.Data
                                         });
             return allImageOutputs;
         }
-        IEnumerable<ImageOutputDto> SortImagesByUploadTime()
+        public IEnumerable<ImageOutputDto> SortImagesByUploadTime()
         {
             List<Model.Image> images = _dbContext.Images.ToList();
             var qry = from i in images
@@ -143,7 +144,7 @@ namespace Trust_Indicator.Data
                                         });
             return imageSorted;
         }
-        IEnumerable<ImageOutputDto> GetImageByTag(string tag)
+        public IEnumerable<ImageOutputDto> GetImageByTag(string tag)
         {
             IEnumerable<Model.Image> images = _dbContext.Images.Where(e => e.Tag.Equals(tag));
             IEnumerable<ImageOutputDto> findImages = images.Select(e =>
@@ -159,7 +160,7 @@ namespace Trust_Indicator.Data
                                         });
             return findImages;
         }
-        IEnumerable<ImageOutputDto> GetImageByName(string name)
+        public IEnumerable<ImageOutputDto> GetImageByName(string name)
         {
             IEnumerable<Model.Image> images = _dbContext.Images.Where(e => e.ImageDescription.ToLower().Contains(name.ToLower()) || e.ImageTitle.ToLower().Contains(name.ToLower()));
             IEnumerable<ImageOutputDto> findImages = images.Select(e =>
@@ -175,7 +176,7 @@ namespace Trust_Indicator.Data
                                         });
             return findImages;
         }
-        IEnumerable<ImageOutputDto> GetImagesByUserName(string userName)
+        public IEnumerable<ImageOutputDto> GetImagesByUserName(string userName)
         {
             IEnumerable<UserOutputDto> users = GetUserByUsername(userName);
             IEnumerable<int> userIds = users.Select(e => e.UserID);
@@ -194,23 +195,23 @@ namespace Trust_Indicator.Data
                                         });
             return findImages;
         }
-        ImageOutputDto GetImageByImageID(int imageId)
+        public ImageOutputDto GetImageByImageID(int imageId)
         {
             Model.Image image = _dbContext.Images.FirstOrDefault(e => e.ImageID == imageId);
             return new ImageOutputDto() { ImageID = image.ImageID, UserID = image.UserID, ImageTitle = image.ImageTitle, ImageUrl = image.ImageUrl, ImageDescription = image.ImageDescription, UploadDate = image.UploadDate, Tag = image.Tag };
         }
-        DateTime GetImageUploadTimeByImageID(int imageId)
+        public DateTime GetImageUploadTimeByImageID(int imageId)
         {
             return GetImageByImageID(imageId).UploadDate;
         }
-        ImageOutputDto UploadImage(Model.Image newImage)
+        public ImageOutputDto UploadImage(Model.Image newImage)
         {
             EntityEntry<Model.Image> entry = _dbContext.Images.Add(newImage);
             Model.Image i = entry.Entity;
             _dbContext.SaveChanges();
             return new ImageOutputDto() { ImageID = i.ImageID, UserID = i.UserID, ImageTitle = i.ImageTitle, ImageUrl = i.ImageUrl, ImageDescription = i.ImageDescription, UploadDate = i.UploadDate, Tag = i.Tag };
         }
-        ImageOutputDto ChangeDescriptionByImageID(int imageId, string newDescription)
+        public ImageOutputDto ChangeDescriptionByImageID(int imageId, string newDescription)
         {
             Model.Image i = _dbContext.Images.FirstOrDefault(e => e.ImageID == imageId);
             i.ImageDescription = (newDescription != null || newDescription != "") ? newDescription : i.ImageDescription;
@@ -219,7 +220,7 @@ namespace Trust_Indicator.Data
             _dbContext.SaveChanges();
             return new ImageOutputDto() { ImageID = updateImage.ImageID, UserID = updateImage.UserID, ImageTitle = updateImage.ImageTitle, ImageUrl = updateImage.ImageUrl, ImageDescription = updateImage.ImageDescription, UploadDate = updateImage.UploadDate, Tag = updateImage.Tag };
         }
-        ImageOutputDto ChangeTitleByImageID(int imageId, string newTitle)
+        public ImageOutputDto ChangeTitleByImageID(int imageId, string newTitle)
         {
             Model.Image i = _dbContext.Images.FirstOrDefault(e => e.ImageID == imageId);
             i.ImageTitle = (newTitle != null || newTitle != "") ? newTitle : i.ImageTitle;
@@ -230,7 +231,7 @@ namespace Trust_Indicator.Data
         }
 
         // Favorite
-        IEnumerable<FavoriteOutputDto> GetAllFavorites()
+        public IEnumerable<FavoriteOutputDto> GetAllFavorites()
         {
             IEnumerable<Favorite> favorites = _dbContext.Favorites.ToList();
             IEnumerable<FavoriteOutputDto> allFavoriteOutputs = favorites.Select(e =>
@@ -246,7 +247,7 @@ namespace Trust_Indicator.Data
                                         });
             return allFavoriteOutputs;
         }
-        IEnumerable<FavoriteOutputDto> GetFavoritesByUserID(int userId)
+        public IEnumerable<FavoriteOutputDto> GetFavoritesByUserID(int userId)
         {
             IEnumerable<Favorite> favorites = _dbContext.Favorites.Where(e => e.UserID == userId);
             IEnumerable<FavoriteOutputDto> allFavoriteOutputs = favorites.Select(e =>
@@ -262,12 +263,12 @@ namespace Trust_Indicator.Data
                                         });
             return allFavoriteOutputs;
         }
-        int GetImageLikesByImageID(int imageId)
+        public int GetImageLikesByImageID(int imageId)
         {
             IEnumerable<Favorite> favorites = _dbContext.Favorites.Where(e => e.ImageID == imageId && e.Is_Favorite == true);
             return favorites.Count();
         }
-        double GetImageRateByImageID(int imageId)
+        public double GetImageRateByImageID(int imageId)
         {
             IEnumerable<Favorite> favorites = _dbContext.Favorites.Where(e => e.ImageID == imageId);
             if (favorites.Any())
@@ -279,12 +280,12 @@ namespace Trust_Indicator.Data
                 return 0;
             }
         }
-        IEnumerable<string> GetCommentsByImageID(int imageId)
+        public IEnumerable<string> GetCommentsByImageID(int imageId)
         {
             IEnumerable<Favorite> favorites = _dbContext.Favorites.Where(e => e.ImageID == imageId && e.Comment != null);
             return favorites.Select(e => e.Comment).ToList();
         }
-        IEnumerable<FavoriteOutputDto> SortUserFavoriteByCreateDate(int userId)
+        public IEnumerable<FavoriteOutputDto> SortUserFavoriteByCreateDate(int userId)
         {
             List<Favorite> favorites = _dbContext.Favorites.Where(e => e.UserID == userId).ToList();
             var qry = from i in favorites
@@ -303,7 +304,7 @@ namespace Trust_Indicator.Data
                                         });
             return favoritesSorted;
         }
-        FavoriteOutputDto AddFavoriteRecord(Favorite newFavorite)
+        public FavoriteOutputDto AddFavoriteRecord(Favorite newFavorite)
         {
             EntityEntry<Favorite> entry = _dbContext.Favorites.Add(newFavorite);
             Favorite i = entry.Entity;
@@ -312,7 +313,7 @@ namespace Trust_Indicator.Data
         }
 
         // Metadata
-        MetadataOutputDto GetMetadataByImageID(int imageId)
+        public MetadataOutputDto GetMetadataByImageID(int imageId)
         {
             Metadata metadata = _dbContext.Metadata.First(e => e.ImageID == imageId);
             return new MetadataOutputDto()
@@ -338,7 +339,7 @@ namespace Trust_Indicator.Data
                 Software = metadata.Software,
             };
         }
-        MetadataOutputDto AddMetadata(Metadata newMetadata)
+        public MetadataOutputDto AddMetadata(Metadata newMetadata)
         {
             EntityEntry<Metadata> entry = _dbContext.Metadata.Add(newMetadata);
             Metadata i = entry.Entity;
