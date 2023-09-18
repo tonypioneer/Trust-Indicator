@@ -22,7 +22,7 @@
   
 - **Background:** With the widespread use of social media and online digital media, the authenticity of photos and creative images has become a global concern. In this digital age, the extensive dissemination of images and advanced editing techniques make it difficult for ordinary users and consumers to discern the authenticity and credibility of images. Misleading, manipulated, or artificially generated images can lead to inaccurate and confusing information dissemination.
   
-- **Objective:** The project aims to develop a photo repository website with Australia as its theme, aiding consumers in better understanding and evaluating the credibility of images by displaying uploaded image metadata and providing visual cues. The website will be an open-source project, allowing users to upload their own images while adhering to knowledge sharing (CC) license requirements. By collecting image metadata and displaying credibility signals, the website will assist users in identifying and discerning authentic images. Additionally, website members can contribute contextual information, such as photographer statements, to provide more background details.
+- **Objective:** The project aims to develop a photo repository website with Australia as its theme, aiding consumers in better understanding and evaluating the credibility of images by displaying uploaded image metadata and providing visual cues. The website will be an open-source project, allowing users to upload their own images while adhering to knowledge-sharing (CC) license requirements. By collecting image metadata and displaying credibility signals, the website will assist users in identifying and discerning authentic images. Additionally, website members can contribute contextual information, such as photographer statements, to provide more background details.
 The project's objective is to offer consumers a reliable resource to improve their ability to judge image authenticity. It also provides photographers and creators with a platform to showcase their works and offer additional information, enhancing public understanding and awareness of images. By being an open-source project, the website encourages other developers to contribute and improve, facilitating ongoing project development and enhancement.
 
 - **Tech Stack:** [Tech Stack Documentation](docs/Tech%20Stack/README.md)
@@ -47,6 +47,25 @@ See the [online documentation](docs/Reference/) for references we referenced in 
 We use [GitHub Discussions](https://github.com/YifangMeng/Trust-Indicator/discussions) as our forum, and Microsoft Teams for chat. These are great places to ask questions and advice from the community or to discuss projects.
 
 For bugs and feature requests, please [raise an issue](https://github.com/YifangMeng/Trust-Indicator/issues/new/choose) and follow the templates there.
+
+#### Installation
+
+Trust-Indicator is designed to function primarily as an online tool. The development team is in the process of deploying the tool to a server, which, once complete, can be accessed through the following link: [image.au.com]().
+
+In addition, Trust-Indicator is open to personal adaptions or updates. Below are the instructions for setting up locally:
+
+**Step 1:** Installing the necessary dependencies.
+
+Visual Studio, C# .NET 6 and Microsoft Entity Framework.
+
+[Visual Studio 2022 download](https://visualstudio.microsoft.com/downloads/)
+During this process, you can click on the .NET core to install .NET
+
+**Step 2:** Clone the repository to your machine.
+
+**Step 3:** Find the sln file in the directory `Trust-Indicator/src/backend/Trust-Indicator/Trust-Indicator.sln`, open it and it will automatically set up the project with Visual Studio. 
+
+**Step 4:** Press `run` in Visual Studio and run `index.html` in the directory `Trust-Indicator/src/frontend/index.html`.
 
 ## Project Management
 In managing our web API development project, we faced challenges such as increasing complexity, the need for consistency in development environments, version control requirements, and time and resource constraints. To address these, we made the following decisions:
