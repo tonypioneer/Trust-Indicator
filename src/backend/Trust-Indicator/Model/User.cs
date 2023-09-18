@@ -1,25 +1,20 @@
 ﻿using FluentValidation;
 using System.ComponentModel.DataAnnotations;
 
-namespace TrustIndicator.Model
+namespace Trust_Indicator.Model
 {
     public class User
     {
         [Key]
         public int UserID { get; set; }
-
-        [Required]
-        public string UserName { get; set; }
+        public string? UserName { get; set; }
         [Required]
         public string Email { get; set; }
         [Required]
         public string Password { get; set; }
         [Required]
-        public string First_Name { get; set; }
-        [Required]
-        public string Last_Name { get; set; }
-        public string? Middle_Name { get; set; }
-
+        public string LegalName { get; set; }
+        public string? ProfilePhotoNO { get; set; }
         [Required]
         public bool Is_Admin { get; set; }
     }
