@@ -26,7 +26,8 @@ namespace Trust_Indicator.Data
         }
         public bool IsAdmin(User user)
         {
-            return user.Is_Admin;
+            User u = GetUserByID(user.UserID);
+            return u.Is_Admin;
         }
 
         //User
@@ -58,27 +59,37 @@ namespace Trust_Indicator.Data
                                         });
             return findUsers;
         }
-        public UserOutputDto GetUserByID(int id)
+        public User GetUserByID(int id)
         {
             User user = _dbContext.Users.First(e => e.UserID == id);
-            return new UserOutputDto() { UserID = user.UserID, LegalName = user.LegalName, Email = user.Email, UserName = (user.UserName != null || user.UserName != "") ? user.UserName : user.LegalName, ProfilePhotoNO = user.ProfilePhotoNO };
+            return user;
         }
         public UserOutputDto GetUserByEmail(string email)
         {
-            User user = _dbContext.Users.First(e => e.Email == email);
-            return new UserOutputDto() { UserID = user.UserID, LegalName = user.LegalName, Email = user.Email, UserName = (user.UserName != null || user.UserName != "") ? user.UserName : user.LegalName, ProfilePhotoNO = user.ProfilePhotoNO };
+            User user = _dbContext.Users.FirstOrDefault(e => e.Email == email);
+            if (user != null)
+            {
+                return new UserOutputDto() { UserID = user.UserID, LegalName = user.LegalName, Email = user.Email, UserName = (user.UserName != null || user.UserName != "") ? user.UserName : user.LegalName, ProfilePhotoNO = (user.ProfilePhotoNO != null) ? user.ProfilePhotoNO : "" };
+
+            }
+            return null;
         }
         public UserOutputDto GetUserByLegalName(string legalName)
         {
-            User user = _dbContext.Users.First(e => e.LegalName == legalName);
-            return new UserOutputDto() { UserID = user.UserID, LegalName = user.LegalName, Email = user.Email, UserName = (user.UserName != null || user.UserName != "") ? user.UserName : user.LegalName, ProfilePhotoNO = user.ProfilePhotoNO };
+            User user = _dbContext.Users.FirstOrDefault(e => e.LegalName == legalName);
+            if (user != null)
+            {
+                return new UserOutputDto() { UserID = user.UserID, LegalName = user.LegalName, Email = user.Email, UserName = (user.UserName != null || user.UserName != "") ? user.UserName : user.LegalName, ProfilePhotoNO = (user.ProfilePhotoNO != null) ? user.ProfilePhotoNO : "" };
+
+            }
+            return null;    
         }
         public UserOutputDto AddUser(User user)
         {
             EntityEntry<User> entry = _dbContext.Users.Add(user);
             User u = entry.Entity;
             _dbContext.SaveChanges();
-            return new UserOutputDto() { UserID = u.UserID, LegalName = u.LegalName, Email = u.Email, UserName = (u.UserName != null || u.UserName != "") ? u.UserName : u.LegalName, ProfilePhotoNO = u.ProfilePhotoNO };
+            return new UserOutputDto() { UserID = u.UserID, LegalName = u.LegalName, Email = u.Email, UserName = (u.UserName != null || u.UserName != "") ? u.UserName : u.LegalName, ProfilePhotoNO = (user.ProfilePhotoNO != null) ? user.ProfilePhotoNO : "" };
         }
         public UserOutputDto ChangeProfilePhoto(User user, string photo)
         {
@@ -96,7 +107,7 @@ namespace Trust_Indicator.Data
             EntityEntry<User> entry = _dbContext.Users.Update(u);
             User updateUser = entry.Entity;
             _dbContext.SaveChanges();
-            return new UserOutputDto() { UserID = updateUser.UserID, LegalName = updateUser.LegalName, Email = updateUser.Email, UserName = (updateUser.UserName != null || updateUser.UserName != "") ? updateUser.UserName : updateUser.LegalName, ProfilePhotoNO = updateUser.ProfilePhotoNO };
+            return new UserOutputDto() { UserID = updateUser.UserID, LegalName = updateUser.LegalName, Email = updateUser.Email, UserName = (updateUser.UserName != null || updateUser.UserName != "") ? updateUser.UserName : updateUser.LegalName, ProfilePhotoNO = (user.ProfilePhotoNO != null) ? updateUser.ProfilePhotoNO : "" };
         }
         public UserOutputDto ChangeUserName(User user, string userName)
         {
@@ -105,7 +116,7 @@ namespace Trust_Indicator.Data
             EntityEntry<User> entry = _dbContext.Users.Update(u);
             User updateUser = entry.Entity;
             _dbContext.SaveChanges();
-            return new UserOutputDto() { UserID = updateUser.UserID, LegalName = updateUser.LegalName, Email = updateUser.Email, UserName = (updateUser.UserName != null || updateUser.UserName != "") ? updateUser.UserName : updateUser.LegalName, ProfilePhotoNO = updateUser.ProfilePhotoNO };
+            return new UserOutputDto() { UserID = updateUser.UserID, LegalName = updateUser.LegalName, Email = updateUser.Email, UserName = (updateUser.UserName != null || updateUser.UserName != "") ? updateUser.UserName : updateUser.LegalName, ProfilePhotoNO = (user.ProfilePhotoNO != null) ? updateUser.ProfilePhotoNO : "" };
         }
 
         // Image
