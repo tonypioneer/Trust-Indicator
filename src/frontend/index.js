@@ -4,6 +4,9 @@ function top_register(){
 function background_register(){
     window.location.href="signup.html"
 }
+function upload(){
+    window.location.href="upload.html"
+}
 
 document.addEventListener('click', function(event) {
     const signInDiv = document.querySelector('.login-container');
