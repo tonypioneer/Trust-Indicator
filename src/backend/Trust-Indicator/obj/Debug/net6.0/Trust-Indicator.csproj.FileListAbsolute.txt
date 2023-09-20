@@ -81,3 +81,4 @@ C:\Users\lingx\Desktop\Trust-Indicator\src\backend\Trust-Indicator\bin\Debug\net
 C:\Users\lingx\Desktop\Trust-Indicator\src\backend\Trust-Indicator\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\lingx\Desktop\Trust-Indicator\src\backend\Trust-Indicator\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\lingx\Desktop\Trust-Indicator\src\backend\Trust-Indicator\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\lingx\Desktop\Trust-Indicator\src\backend\Trust-Indicator\bin\Debug\net6.0\BCrypt.Net-Next.dll
