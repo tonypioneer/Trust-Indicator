@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using static System.Net.Mime.MediaTypeNames;
+using BCrypt.Net;
 
 namespace Trust_Indicator.Data
 {
@@ -22,7 +23,10 @@ namespace Trust_Indicator.Data
         public bool ValidLogin(string email, string password)
         {
             User user = _dbContext.Users.FirstOrDefault(u => u.Email == email);
-            return user.Password == password;
+            if (user != null) {
+                return Verify(password, user.Password);
+            }
+            return false;
         }
         public bool IsAdmin(User user)
         {
@@ -45,10 +49,20 @@ namespace Trust_Indicator.Data
                                         });
             return allUserOutputs;
         }
+
+        public bool CheckUserName(string username)
+        {
+            User user = _dbContext.Users.FirstOrDefault(e => e.UserName.ToLower() == username.ToLower() || e.LegalName.ToLower() == username.ToLower());
+            if (user != null)
+            {
+                return true;
+            }
+            return false;
+        }
         public IEnumerable<UserOutputDto> GetUserByUsername(string username)
         {
             IEnumerable<User> users = _dbContext.Users.Where(e => e.UserName.ToLower().Contains(username.ToLower()) || e.LegalName.ToLower().Contains(username.ToLower()));
-            IEnumerable<UserOutputDto> findUsers = users.Select(e =>
+            IEnumerable<UserOutputDto> allUserOutputs = users.Select(e =>
                                         new UserOutputDto()
                                         {
                                             UserID = e.UserID,
@@ -57,7 +71,7 @@ namespace Trust_Indicator.Data
                                             LegalName = e.LegalName,
                                             ProfilePhotoNO = e.ProfilePhotoNO,
                                         });
-            return findUsers;
+            return allUserOutputs;
         }
         public User GetUserByID(int id)
         {
@@ -86,6 +100,7 @@ namespace Trust_Indicator.Data
         }
         public UserOutputDto AddUser(User user)
         {
+            user.Password = HashPassword(user.Password);
             EntityEntry<User> entry = _dbContext.Users.Add(user);
             User u = entry.Entity;
             _dbContext.SaveChanges();

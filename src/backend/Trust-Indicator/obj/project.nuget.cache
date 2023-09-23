@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "X+ET5eHp2ZuRAOCGcmEqX/Y1ViU8EXKPZ4EVCmM7NyXCUAIpbq+bpWN63NjRMoHjJqJjfClUwB2ERG+a9uDbhg==",
+  "dgSpecHash": "MCsFNuGb3/7b5/cMYOtssN8ZyMRLnQgl4rTiAqGjfYTQ7VEMsyK5cg5LtOnCVhUF/ZpCYyICIuQjnVtDyVE19A==",
   "success": true,
   "projectFilePath": "C:\\Users\\lingx\\Desktop\\Trust-Indicator\\src\\backend\\Trust-Indicator\\Trust-Indicator.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\lingx\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\lingx\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\lingx\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\lingx\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",

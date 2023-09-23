@@ -13,6 +13,7 @@ namespace Trust_Indicator.Data
         //User
         IEnumerable<UserOutputDto> GetAllUsers();
         IEnumerable<UserOutputDto> GetUserByUsername(string username);
+        bool CheckUserName(string username);
         User GetUserByID(int id);
         UserOutputDto GetUserByEmail(string email);
         UserOutputDto GetUserByLegalName(string legalName);

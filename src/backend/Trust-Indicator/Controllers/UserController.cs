@@ -67,7 +67,7 @@ namespace Trust_Indicator.Controllers
                 return BadRequest("Email already used!");
             }
 
-            if (_repo.GetUserByUsername(user.UserName) != null)
+            if (_repo.CheckUserName(user.UserName))
             {
                 return BadRequest("This user name is used!");
             }
