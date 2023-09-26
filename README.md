@@ -118,26 +118,28 @@ The project mainly has the following deliverables.
 
 ### Top Priorities
 
-- Create a website, determine a suitable domain name, and set up the server environment.
-- Extract and record image metadata, including shooting equipment, shooting date, geographic location, and other information.
-- Conduct research to explore credibility signal design based on image metadata, including visual cues or other symbolic representations.
-- Allow users to view the EXIF information of uploaded images, such as aperture, shutter speed, ISO, and other shooting parameters.
-- Design an image upload feature, allowing users to upload images.
-- Allow website members to add contextual information to images, such as photographer statements or other relevant details.
-- Allow users to create collections to save their favorite images for later viewing.
-- Allow users to add and manage tags and keywords for images, enhancing the accuracy and efficiency of image search.
-- Set up a data backup mechanism to safeguard the security and integrity of images and metadata.
-- Enable users to leave comments and ratings on image pages, providing additional information and feedback to other users.
+- Website Prototype: Initial design and functionality.
+- Domain Name Recommendation Report: A list of suggested domain names.
+- Server Environment Setup Documentation: Instructions on how to set up the server.
+- Image Metadata Extraction Tool: A tool or feature that extracts and records details like shooting equipment, date, geographic location, etc.
+- Credibility Signal Design Research Report: Recommendations on credibility signal design based on image metadata.
+- EXIF Information Viewing Feature: A feature allowing users to view EXIF details of uploaded images.
+- Image Upload Feature: Interface and backend functionality for users to upload images.
+- Contextual Information Addition Feature: Allows users to add photographer statements or other relevant details to images.
+- Image Collection Feature: Allows users to create collections and save their favorite images.
+- Image Tag and Keyword Management Feature: Users can add and manage tags and keywords for images.
+- Data Backup Mechanism: Ensures the safety and integrity of images and metadata.
+- Comment and Rating Feature: Allows users to leave comments and ratings on image pages.
   
 ### Intermediate Priorities - If Applicable
-- Embed knowledge sharing (CC) license terms on the website to ensure copyright information for uploaded images and content.
-- Show credibility signals/visual cues to help users assess the credibility of images.
-- Ensure the accuracy and credibility of added contextual information.
-- Add image search functionality, allowing users to search based on keywords, date ranges, geographical locations, and other metadata information.
-- Provide filtering options, enabling users to narrow down image results based on credibility, license types, and other criteria.
-- Incorporate image sharing functionality, allowing users to easily share their favorite images on social media or via links.
-- Set up a user feedback system, enabling users to provide opinions, suggestions, or report issues to website administrators.
-- Implement appropriate security measures to prevent malicious uploads or data leaks.
+- Knowledge Sharing License Embedding Feature: Displays copyright information for uploaded images and content on the website.
+- Image Credibility Signals/Visual Cues Feature: Helps users assess the credibility of images.
+- Accuracy and Credibility Verification Mechanism for Added Contextual Information: Ensures the accuracy and credibility of added contextual details.
+- Image Search Feature: Allows users to search based on keywords, date ranges, geographical locations, and other metadata.
+- Image Filtering Feature: Enables users to filter image results based on credibility, license types, and other criteria.
+- Image Sharing Feature: Allows users to share their favorite images on social media or via links.
+- User Feedback System: Enables users to provide feedback, suggestions, or report issues to website administrators.
+- Security Measures Documentation: Describes how to prevent malicious uploads or data breaches.
 
 
 ## Future Improvements
