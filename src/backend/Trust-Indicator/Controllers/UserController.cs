@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using System.Text;
 using Trust_Indicator.Data;
 using Trust_Indicator.Dtos;
 using Trust_Indicator.Model;
@@ -51,17 +52,21 @@ namespace Trust_Indicator.Controllers
 
             if (!results.IsValid)
             {
+                String error = "";
                 foreach (var failure in results.Errors)
+                 
                 {
+                    error += failure.ErrorMessage + "\n";;
                     Console.WriteLine("Property " + failure.PropertyName + " failed validation. Error was: " + failure.ErrorMessage);
+                   
                 }
-                return BadRequest();
+                return BadRequest(error.TrimEnd('\n'));
             }
-
+            /* 
             if (_repo.GetUserByLegalName(user.LegalName) != null)
             {
                 return BadRequest("Person already has an account!");
-            }
+            } */
 
             if (_repo.GetUserByEmail(user.Email) != null)
             {
@@ -117,5 +122,5 @@ namespace Trust_Indicator.Controllers
             return Ok(_repo.ChangeUserName(user, userName));
         }
         */
+        }
     }
-}
