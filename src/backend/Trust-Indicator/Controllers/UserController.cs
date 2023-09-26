@@ -10,7 +10,7 @@ namespace Trust_Indicator.Controllers
 {
     [Route("user")]
     [ApiController]
-    [Authorize]
+    
     public class UserController : Controller
     {
         private readonly IRepo _repo;
@@ -21,6 +21,7 @@ namespace Trust_Indicator.Controllers
 
         //user/login
         [HttpPost("login")]
+        [Authorize]
         public ActionResult<bool> ValidLogin(string email, string password)
         {
             return Ok(_repo.ValidLogin(email, password));
