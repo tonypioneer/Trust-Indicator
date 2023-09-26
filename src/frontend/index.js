@@ -5,7 +5,14 @@ function background_register(){
     window.location.href="signup.html"
 }
 function upload(){
-    window.location.href="upload.html"
+    var userEmail = sessionStorage.getItem('userEmail');
+    if (userEmail) {
+        window.location.href="upload.html"
+    } else {
+        // 如果用户未登录，跳转到登录页面
+        window.location.href="login.html"
+    }
+
 }
 
 document.addEventListener('click', function(event) {
@@ -28,22 +35,42 @@ document.addEventListener('click', function(event) {
 
 function sign_in(event) {
     event.stopPropagation();  // 阻止事件冒泡
-
-    const signInContent = document.querySelector('.sign-in-content');
-    if(signInContent.style.display === 'block') {
-        signInContent.style.display = 'none';  // 如果已经显示则隐藏
-        wasContentShown = false;
-
+    var userEmail = sessionStorage.getItem('userEmail');
+    if (userEmail) {
+        // 如果用户已登录，显示或隐藏签入内容
+        const signInContent = document.querySelector('.sign-in-content');
+        if (signInContent.style.display === 'block') {
+            signInContent.style.display = 'none';
+        } else {
+            signInContent.style.display = 'block';
+        }
     } else {
-        signInContent.style.display = 'block';  // 如果隐藏则显示
-        wasContentShown = true;
-
+        // 如果用户未登录，跳转到登录页面
+        window.location.href = "login.html";
     }
-
     const dropdown = document.getElementById('language-options');
     dropdown.classList.add('hidden');
-
 }
+
+window.onload = function() {
+    var userEmail = sessionStorage.getItem('userEmail');
+    if (userEmail) {
+        document.querySelector(".sign-text").textContent = userEmail;
+        document.querySelector("#show-name").textContent = "Hi  " + userEmail;
+    }
+};
+
+function sign_out(event){
+    event.stopPropagation();
+    sessionStorage.removeItem('userEmail');
+    document.querySelector(".sign-text").textContent = "Sign In";
+    const signInContent = document.querySelector('.sign-in-content');
+    signInContent.style.display = 'none';
+}
+
+
+
+
 let wasContentShown = false;
 window.addEventListener('scroll', function() {
     let content = document.querySelector('.sign-in-content');

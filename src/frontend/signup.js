@@ -8,7 +8,6 @@ function show(){
     }
 }
 
-
 function sign_up() {
     event.preventDefault();
     var usernameElement = document.getElementById('username_input');
@@ -22,9 +21,6 @@ function sign_up() {
     var legalName = legalNameElement.value;
     var password = passwordElement.value;
     var confirmPassword = confirmPasswordElement.value;
-
-
-
     if (!username || !email || !legalName || !password || !confirmPassword) {
         messageElement.textContent = "All fields must be filled out!";
         messageElement.style.fontSize = "18px";
