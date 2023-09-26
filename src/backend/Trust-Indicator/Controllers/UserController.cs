@@ -10,7 +10,6 @@ namespace Trust_Indicator.Controllers
 {
     [Route("user")]
     [ApiController]
-    [Authorize]
     public class UserController : Controller
     {
         private readonly IRepo _repo;
@@ -98,18 +97,21 @@ namespace Trust_Indicator.Controllers
         }
 
         [HttpPost("changeProfilePhoto")]
+        [Authorize]
         public ActionResult<UserOutputDto> ChangeProfilePhoto(User user, string photo)
         {
             return Ok(_repo.ChangeProfilePhoto(user, photo));
         }
 
         [HttpPost("changePassword")]
+        [Authorize]
         public ActionResult<UserOutputDto> ChangePassword(User user, string password)
         {
             return Ok(_repo.ChangePassword(user, password));
         }
 
         [HttpPost("changeUserName")]
+        [Authorize]
         public ActionResult<UserOutputDto> ChangeUserName(User user, string userName)
         {
             return Ok(_repo.ChangeUserName(user, userName));
