@@ -15,7 +15,7 @@ namespace Trust_Indicator.Data
         IEnumerable<UserOutputDto> GetUserByUsername(string username);
         bool CheckUserName(string username);
         User GetUserByID(int id);
-        UserOutputDto GetUserByEmail(string email);
+        User GetUserByEmail(string email);
         UserOutputDto GetUserByLegalName(string legalName);
         UserOutputDto AddUser(User user);
         UserOutputDto ChangeProfilePhoto(User user, string photo);

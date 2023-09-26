@@ -22,7 +22,11 @@ namespace Trust_Indicator.Controllers
         [HttpPost("login")]
         public ActionResult<bool> ValidLogin(string email, string password)
         {
-            return Ok(_repo.ValidLogin(email, password));
+            if (_repo.ValidLogin(email, password))
+            {
+                return Ok();
+            }
+            return NotFound();
         }
 
         //user/isAdmin/{userId}
@@ -89,7 +93,7 @@ namespace Trust_Indicator.Controllers
                 return Ok(user);
             }
         }
-        /* 
+
         private User GetAuthenticatedUser()
         {
             var email = User.FindFirstValue("email");
@@ -116,6 +120,5 @@ namespace Trust_Indicator.Controllers
         {
             return Ok(_repo.ChangeUserName(user, userName));
         }
-        */
     }
 }

@@ -78,13 +78,12 @@ namespace Trust_Indicator.Data
             User user = _dbContext.Users.First(e => e.UserID == id);
             return user;
         }
-        public UserOutputDto GetUserByEmail(string email)
+        public User GetUserByEmail(string email)
         {
             User user = _dbContext.Users.FirstOrDefault(e => e.Email == email);
             if (user != null)
             {
-                return new UserOutputDto() { UserID = user.UserID, LegalName = user.LegalName, Email = user.Email, UserName = (user.UserName != null || user.UserName != "") ? user.UserName : user.LegalName, ProfilePhotoNO = (user.ProfilePhotoNO != null) ? user.ProfilePhotoNO : "" };
-
+                return user;
             }
             return null;
         }
