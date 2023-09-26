@@ -1,6 +1,7 @@
 ﻿using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using Trust_Indicator.Data;
 using Trust_Indicator.Dtos;
 using Trust_Indicator.Model;
@@ -9,6 +10,7 @@ namespace Trust_Indicator.Controllers
 {
     [Route("user")]
     [ApiController]
+    [Authorize]
     public class UserController : Controller
     {
         private readonly IRepo _repo;
@@ -88,5 +90,30 @@ namespace Trust_Indicator.Controllers
                 return Ok(user);
             }
         }
+        /* 
+        private User GetAuthenticatedUser()
+        {
+            var email = User.FindFirstValue("email");
+            return _repo.GetUserByEmail(email);
+        }
+
+        [HttpPost("changeProfilePhoto")]
+        public ActionResult<UserOutputDto> ChangeProfilePhoto(User user, string photo)
+        {
+            return Ok(_repo.ChangeProfilePhoto(user, photo));
+        }
+
+        [HttpPost("changePassword")]
+        public ActionResult<UserOutputDto> ChangePassword(User user, string password)
+        {
+            return Ok(_repo.ChangePassword(user, password));
+        }
+
+        [HttpPost("changeUserName")]
+        public ActionResult<UserOutputDto> ChangeUserName(User user, string userName)
+        {
+            return Ok(_repo.ChangeUserName(user, userName));
+        }
+        */
     }
 }
