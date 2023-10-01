@@ -30,7 +30,7 @@ namespace Trust_Indicator.Data
         IEnumerable<ImageOutputDto> GetImagesByUserName(string userName);
         ImageOutputDto GetImageByImageID(int imageId);
         DateTime GetImageUploadTimeByImageID(int imageId);
-        ImageOutputDto UploadImage(Image newImage);
+        ImageOutputDto UploadImage(ImageInputDto newImage, User user);
         ImageOutputDto ChangeDescriptionByImageID(int imageId, string newDescription);
         ImageOutputDto ChangeTitleByImageID(int imageId, string newTitle);
 

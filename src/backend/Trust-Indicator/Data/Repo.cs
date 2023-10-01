@@ -192,6 +192,10 @@ namespace Trust_Indicator.Data
                                             UploadDate = e.UploadDate,
                                             Tag = e.Tag,
                                         });
+            if (findImages.Count() == 0)
+            {
+                return null;
+            }
             return findImages;
         }
         public IEnumerable<ImageOutputDto> GetImageByName(string name)
@@ -208,6 +212,10 @@ namespace Trust_Indicator.Data
                                             UploadDate = e.UploadDate,
                                             Tag = e.Tag,
                                         });
+            if (findImages.Count() == 0)
+            {
+                return null;
+            }
             return findImages;
         }
         public IEnumerable<ImageOutputDto> GetImagesByUserName(string userName)
@@ -232,15 +240,20 @@ namespace Trust_Indicator.Data
         public ImageOutputDto GetImageByImageID(int imageId)
         {
             Model.Image image = _dbContext.Images.FirstOrDefault(e => e.ImageID == imageId);
+            if (image == null)
+            {
+                return null;
+            }
             return new ImageOutputDto() { ImageID = image.ImageID, UserID = image.UserID, ImageTitle = image.ImageTitle, ImageUrl = image.ImageUrl, ImageDescription = image.ImageDescription, UploadDate = image.UploadDate, Tag = image.Tag };
         }
         public DateTime GetImageUploadTimeByImageID(int imageId)
         {
             return GetImageByImageID(imageId).UploadDate;
         }
-        public ImageOutputDto UploadImage(Model.Image newImage)
+        public ImageOutputDto UploadImage(ImageInputDto newImage, User user)
         {
-            EntityEntry<Model.Image> entry = _dbContext.Images.Add(newImage);
+            Model.Image image = new Model.Image() { UserID = user.UserID, ImageTitle = newImage.ImageTitle, ImageUrl = newImage.ImageUrl, ImageDescription = newImage.ImageDescription, UploadDate = DateTime.Now, Tag = newImage.Tag };
+            EntityEntry<Model.Image> entry = _dbContext.Images.Add(image);
             Model.Image i = entry.Entity;
             _dbContext.SaveChanges();
             return new ImageOutputDto() { ImageID = i.ImageID, UserID = i.UserID, ImageTitle = i.ImageTitle, ImageUrl = i.ImageUrl, ImageDescription = i.ImageDescription, UploadDate = i.UploadDate, Tag = i.Tag };

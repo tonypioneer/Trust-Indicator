@@ -14,7 +14,6 @@ namespace Trust_Indicator.Model
         public int Rate { get; set; }
         public bool Is_Favorite { get; set; }
         public string? Comment { get; set; }
-        [Timestamp]
         public DateTime Create_Date { get; set; }
     }
 }
