@@ -117,7 +117,7 @@ namespace Trust_Indicator.Data
         public UserOutputDto ChangePassword(User user, string password)
         {
             User u = _dbContext.Users.FirstOrDefault(e => e.UserID == user.UserID);
-            u.Password = (password != null || password != "" || password.Length < 12 || password.Length >= 6) ? password : u.Password;
+            u.Password = (password != null || password != "" || password.Length < 12 || password.Length >= 6) ? HashPassword(password) : u.Password;
             EntityEntry<User> entry = _dbContext.Users.Update(u);
             User updateUser = entry.Entity;
             _dbContext.SaveChanges();
@@ -125,12 +125,21 @@ namespace Trust_Indicator.Data
         }
         public UserOutputDto ChangeUserName(User user, string userName)
         {
-            User u = _dbContext.Users.FirstOrDefault(e => e.UserID == user.UserID);
-            u.ProfilePhotoNO = (userName != null || userName != "") ? userName : u.UserName;
-            EntityEntry<User> entry = _dbContext.Users.Update(u);
-            User updateUser = entry.Entity;
-            _dbContext.SaveChanges();
-            return new UserOutputDto() { UserID = updateUser.UserID, LegalName = updateUser.LegalName, Email = updateUser.Email, UserName = (updateUser.UserName != null || updateUser.UserName != "") ? updateUser.UserName : updateUser.LegalName, ProfilePhotoNO = (user.ProfilePhotoNO != null) ? updateUser.ProfilePhotoNO : "" };
+            if (_dbContext.Users.FirstOrDefault(e => e.UserName == userName) != null)
+            {
+                return null;
+            }
+            if (user != null)
+            {
+                User u = _dbContext.Users.FirstOrDefault(e => e.Email == user.Email);
+                u.UserName = (userName != null || userName != "") ? userName : u.UserName;
+                EntityEntry<User> entry = _dbContext.Users.Update(u);
+                User updateUser = entry.Entity;
+                _dbContext.SaveChanges();
+                return new UserOutputDto() { UserID = updateUser.UserID, LegalName = updateUser.LegalName, Email = updateUser.Email, UserName = (updateUser.UserName != null || updateUser.UserName != "") ? updateUser.UserName : updateUser.LegalName, ProfilePhotoNO = (user.ProfilePhotoNO != null) ? updateUser.ProfilePhotoNO : "" };
+
+            }
+            return null;
         }
 
         // Image

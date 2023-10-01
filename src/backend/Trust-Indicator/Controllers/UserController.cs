@@ -100,24 +100,30 @@ namespace Trust_Indicator.Controllers
             return _repo.GetUserByEmail(email);
         }
 
+        [Authorize(AuthenticationSchemes = "MyAuthentication")]
+        [Authorize(Policy = "UserOnly")]
         [HttpPost("changeProfilePhoto")]
-        [Authorize]
-        public ActionResult<UserOutputDto> ChangeProfilePhoto(User user, string photo)
+        public ActionResult<UserOutputDto> ChangeProfilePhoto(string photo)
         {
+            User user = GetAuthenticatedUser();
             return Ok(_repo.ChangeProfilePhoto(user, photo));
         }
 
+        [Authorize(AuthenticationSchemes = "MyAuthentication")]
+        [Authorize(Policy = "UserOnly")]
         [HttpPost("changePassword")]
-        [Authorize]
-        public ActionResult<UserOutputDto> ChangePassword(User user, string password)
+        public ActionResult<UserOutputDto> ChangePassword(string password)
         {
+            User user = GetAuthenticatedUser();
             return Ok(_repo.ChangePassword(user, password));
         }
 
+        [Authorize(AuthenticationSchemes = "MyAuthentication")]
+        [Authorize(Policy = "UserOnly")]
         [HttpPost("changeUserName")]
-        [Authorize]
-        public ActionResult<UserOutputDto> ChangeUserName(User user, string userName)
+        public ActionResult<UserOutputDto> ChangeUserName(string userName)
         {
+            User user = GetAuthenticatedUser();
             return Ok(_repo.ChangeUserName(user, userName));
         }
     }
