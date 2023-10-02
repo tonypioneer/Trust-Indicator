@@ -50,7 +50,7 @@ For bugs and feature requests, please [raise an issue](https://github.com/Yifang
 
 #### Installation
 
-Trust-Indicator is designed to function primarily as an online tool. The development team is in the process of deploying the tool to a server, which, once complete, can be accessed through the following link: [image.au.com]().
+Trust-Indicator is designed to function primarily as an online tool. The development team is in the process of deploying the tool to a server, which, once complete, can be accessed through the following link: [image.com.au]().
 
 In addition, Trust-Indicator is open to personal adaptions or updates. Below are the instructions for setting up locally:
 
@@ -91,7 +91,7 @@ The Decision Log System is a tool designed to track and manage decisions made wi
 
 ## Conflict Resolution Protocol
 - **Purpose:**
-<p>The purpose of this document is to outline a well-defined protocol for handling conflicts within our Android development team. This protocol is intended to ensure that disagreements and issues are resolved efficiently and effectively, allowing us to maintain a healthy and collaborative work environment while focusing on the completion of our APP design and testing tasks.</p >
+<p>The purpose of this document is to outline a well-defined protocol for handling conflicts within our Android development team. This protocol is intended to ensure that disagreements and issues are resolved efficiently and effectively, allowing us to maintain a healthy and collaborative work environment while focusing on the completion of our APP design and testing tasks.</p>
 
 - **Protocol:**
   - **Identifying the Conflict:**
@@ -99,14 +99,14 @@ The Decision Log System is a tool designed to track and manage decisions made wi
     video calls, or other appropriate communication channels.
     Conflicts should be brought up as soon as possible to prevent escalation and to ensure timely resolution.</p>
   - **Open Discussion:**
-    <p>Once a conflict has been identified, all parties involved should engage in an open discussion to better understand the root cause of the issue.</p >
+    <p>Once a conflict has been identified, all parties involved should engage in an open discussion to better understand the root cause of the issue.</p>
     <p>Each team member involved should have the opportunity to express their perspective and concerns without interruption.
     Have group meeting twice a week on Wednesday(on-campus) and Sunday(on-line).</p >
-    <p>Active listening should be practiced by all participants, ensuring that everyone's viewpoint is heard and understood.</p >
+    <p>Active listening should be practiced by all participants, ensuring that everyone's viewpoint is heard and understood.</p>
   - **Brainstorming Solutions:**
-    <p>After all parties have had a chance to express their concerns, the group should brainstorm potential solutions to the conflict.</p >
-    <p>Team members are encouraged to offer suggestions and ideas, no matter how unconventional they may seem.</p >
-    <p>The team should aim for a consensus-based solution, where all parties involved are in agreement.</p >
+    <p>After all parties have had a chance to express their concerns, the group should brainstorm potential solutions to the conflict.</p>
+    <p>Team members are encouraged to offer suggestions and ideas, no matter how unconventional they may seem.</p>
+    <p>The team should aim for a consensus-based solution, where all parties involved are in agreement.</p>
 ## Testing Summary
 In the [testing report](docs/Testing%20Summary), we will highlight the key testing milestones, the test strategies employed, and the outcomes of our testing activities to ensure the quality and reliability of our Product/Software/Service.
 ## User Manual
