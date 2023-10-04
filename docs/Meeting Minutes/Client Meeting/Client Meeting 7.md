@@ -6,7 +6,7 @@
 
 ## **Location:** 
 
-Online, Microsoft Teams
+CSIT Building
 
 ## **Attendees:** 
 
