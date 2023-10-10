@@ -2,7 +2,7 @@
 
 ## **Date/Time:** 
 
-02 October 2023, 5:00pm - 6:00 pm
+04 October 2023, 5:00pm - 6:00 pm
 
 ## **Location:** 
 
