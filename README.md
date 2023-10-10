@@ -39,7 +39,7 @@ The project's objective is to offer consumers a reliable resource to improve the
 |u7342064|Yifang Meng|Backend & Quality Assurance|
 |u7545864|Zhaoyun Zhang|Backend & Machine Learning Instructor|
 ## Statement of Work
-[Statement of Work](docs/Statement%20of%20Work/Trust%20Indicators%20-%20Statement%20of%20Work.pdf)
+[Statement of Work](docs/Statement of Work/(updated) Trust Indicators - Statement of Work.pdf)
 
 ## Getting Start
 See the [online documentation](docs/Reference/) for references we referenced in the project.
