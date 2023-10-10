@@ -42,3 +42,4 @@ Reasoning: The White Camellia, although not originally native to Australia, was 
 Feedback during design iterations was invaluable. Stakeholder feedback helped refine and finalize the logo.
 
 ![Credibility Signal Version 1.0.0 (credit to Vidhu)](CredibilitySignal_v1.0.0.jpg)
+Credibility Signal Version 1.0.0 (credit to Vidhu)
