@@ -3,3 +3,4 @@ Welcome to our Project Feedback and Action Tracker. This repository is dedicated
 Our commitment is to be transparent and responsive. By diligently monitoring feedback and ensuring we act upon it, we aim to build a robust project that meets the needs of all stakeholders.
 
 Please navigate through to https://docs.google.com/spreadsheets/d/1YG4DsuldOKVNohsI3WNEXsibblDCeCiY6GVCVDL-Iss/edit#gid=0
+![image](https://github.com/tonypioneer/Trust-Indicator/assets/141119645/ded414ec-ebf9-49d8-a155-ca7bad34bb26)
