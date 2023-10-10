@@ -4,7 +4,7 @@
 
 02 October 2023, 7:00pm - 8:00 pm
 
-## **Location:** 
+## **Location:**  
 
 Online, Microsoft Teams
 
