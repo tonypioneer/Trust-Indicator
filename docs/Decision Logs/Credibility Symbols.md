@@ -33,3 +33,6 @@ We anticipate improved user trust in our platform by adopting a combined approac
 ## Expected Impact
 
 We foresee a positive user reception, with quicker decision-making regarding the trustworthiness of images. The credibility signals should enhance overall user engagement and trust in the platform, leading to increased usage and community contributions.
+
+![Credibility Symbols Version 1.0.0 (credit to Vidhu)](CredibilitySymbols_v1.0.0.png)
+Credibility Symbols Version 1.0.0 (credit to Vidhu)
