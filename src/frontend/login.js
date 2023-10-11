@@ -30,7 +30,7 @@ function sign_in(event){
             email_prompt.style.display = 'none';
         }, 2000);
     }
-    fetch(`https://localhost:5000/user/login?email=${email}&password=${password}`, {
+    fetch(`http://tecko.org:5001/user/login?email=${email}&password=${password}`, {
         method: "POST",
     })
         .then(response => response.json())

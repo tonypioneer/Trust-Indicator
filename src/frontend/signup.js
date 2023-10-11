@@ -37,7 +37,7 @@ function sign_up() {
         return;
     }
 
-    const signup = fetch("https://localhost:5000/user/NewUser",{
+    const signup = fetch("http://tecko.org:5001/user/NewUser",{
         method: "POST",
         headers: {
             "Content-Type": "application/json",
