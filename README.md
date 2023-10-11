@@ -123,8 +123,10 @@ The project mainly has the following deliverables.
 - Domain Name Recommendation Report: A list of suggested domain names.
 - Server Environment Setup Documentation: Instructions on how to set up the server.
 - Image Metadata Extraction Tool: A tool or feature that extracts and records details like shooting equipment, date, geographic location, etc.
+  [View Manual](https://github.com/tonypioneer/Trust-Indicator/tree/main/docs/Metadata%20Extractor%20Explanation)
 - Credibility Signal Design Research Report: Recommendations on credibility signal design based on image metadata.
 - EXIF Information Viewing Feature: A feature allowing users to view EXIF details of uploaded images.
+  [View Manual](https://github.com/tonypioneer/Trust-Indicator/tree/main/docs/Metadata%20Extractor%20Explanation)
 - Image Upload Feature: Interface and backend functionality for users to upload images.
 - Contextual Information Addition Feature: Allows users to add photographer statements or other relevant details to images.
 - Image Collection Feature: Allows users to create collections and save their favorite images.
