@@ -8,13 +8,14 @@
 6. [Team Charter](#team-charter)
 7. [Meeting Minutes](#meeting-minutes)
 8. [Decision Logs](#decision-logs)
-9. [Conflict Resolution Protocol](#conflict-resolution-protocol)
-10. [Testing Summary](#testing-summary)
-11. [User Manual](#user-manual)
-12. [Deliverables](#deliverables)
-13. [Future Improvements](#future-improvements)
-14. [Risk Management](#risk-management)
-15. [Acknowledgements](#acknowledgements)
+9. [Reflection Log](https://github.com/tonypioneer/Trust-Indicator/blob/b27b282cb43956ff3917b57e455a8b2bdd3f6ca6/docs/Reflective/README.md)
+10. [Conflict Resolution Protocol](#conflict-resolution-protocol)
+11. [Testing Summary](#testing-summary)
+12. [User Manual](#user-manual)
+13. [Deliverables](#deliverables)
+14. [Future Improvements](#future-improvements)
+15. [Risk Management](#risk-management)
+16. [Acknowledgements](#acknowledgements)
 ## Project Description
 - **Version:** 1.0.0, August, 2023
   
