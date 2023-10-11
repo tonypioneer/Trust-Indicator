@@ -8,7 +8,7 @@ class Program
 {
     public static string exifToolPath = @"C:\Users\yifan\Desktop\EXIF Tool\exiftool.exe";
     // Path to the image file
-    public static string imagePath = @"C:\Users\yifan\Desktop\EXIF_TESTER\ExifToolWrapperTests\test.jpg";
+    public static string imagePath = @"C:\Users\yifan\Desktop\Trust-Indicator\src\EXIF_Logic\EXIF_TESTER\ExifToolWrapperTests\test2.jpg";
     static void Main()
     {
         List<MetadataItem> metadataItems = new List<MetadataItem>();
@@ -22,7 +22,7 @@ class Program
         }
 
         // 写入元数据到txt文件
-        string outputFile = @"C:\Users\yifan\Desktop\EXIF_TESTER\EXIF_TESTER\metadata.txt";
+        string outputFile = @"C:\Users\yifan\Desktop\Trust-Indicator\src\EXIF_Logic\EXIF_TESTER\EXIF_TESTER\metadata.txt";
         WriteMetadataToFile(metadataItems, outputFile);
 
         Console.WriteLine($"Metadata written to: {outputFile}");

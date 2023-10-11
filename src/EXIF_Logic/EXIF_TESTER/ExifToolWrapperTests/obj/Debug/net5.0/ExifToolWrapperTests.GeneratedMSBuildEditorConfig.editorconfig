@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = ExifToolWrapperTests
-build_property.ProjectDir = C:\Users\yifan\Desktop\EXIF_TESTER\ExifToolWrapperTests\
+build_property.ProjectDir = C:\Users\yifan\Desktop\Trust-Indicator\src\EXIF_Logic\EXIF_TESTER\ExifToolWrapperTests\

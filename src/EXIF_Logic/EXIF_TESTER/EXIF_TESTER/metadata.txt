@@ -1,10 +1,10 @@
-Type: SourceFile, Value: C:/Users/yifan/Desktop/EXIF_TESTER/ExifToolWrapperTests/test.jpg
+Type: SourceFile, Value: C:/Users/yifan/Desktop/Trust-Indicator/src/EXIF_Logic/EXIF_TESTER/ExifToolWrapperTests/test2.jpg
 Type: ExifToolVersion, Value: 12.67
-Type: FileName, Value: test.jpg
-Type: Directory, Value: C:/Users/yifan/Desktop/EXIF_TESTER/ExifToolWrapperTests
-Type: FileSize, Value: 136 kB
+Type: FileName, Value: test2.jpg
+Type: Directory, Value: C:/Users/yifan/Desktop/Trust-Indicator/src/EXIF_Logic/EXIF_TESTER/ExifToolWrapperTests
+Type: FileSize, Value: 95 kB
 Type: FileModifyDate, Value: 2018:09:27 18:47:29+10:00
-Type: FileAccessDate, Value: 2023:10:09 17:20:13+11:00
+Type: FileAccessDate, Value: 2023:10:11 21:48:39+11:00
 Type: FileCreateDate, Value: 2023:10:09 17:03:07+11:00
 Type: FilePermissions, Value: -rw-rw-rw-
 Type: FileType, Value: JPEG
@@ -19,24 +19,24 @@ Type: XResolution, Value: 300
 Type: YResolution, Value: 300
 Type: ResolutionUnit, Value: inches
 Type: Software, Value: Ver.1.00
-Type: ModifyDate, Value: 2017:07:31 15:01:00
+Type: ModifyDate, Value: 2017:08:01 13:09:50
 Type: YCbCrPositioning, Value: Centered
-Type: ExposureTime, Value: 1/250
-Type: FNumber, Value: 8
+Type: ExposureTime, Value: 1/320
+Type: FNumber, Value: 9
 Type: ExposureProgram, Value: Program AE
 Type: ISO, Value: 100
 Type: SensitivityType, Value: Recommended Exposure Index
 Type: ExifVersion, Value: 0230
-Type: DateTimeOriginal, Value: 2017:07:31 14:01:00
-Type: CreateDate, Value: 2017:07:31 15:01:00
+Type: DateTimeOriginal, Value: 2017:08:01 12:09:50
+Type: CreateDate, Value: 2017:08:01 13:09:50
 Type: ComponentsConfiguration, Value: Y, Cb, Cr, -
 Type: CompressedBitsPerPixel, Value: 4
 Type: ExposureCompensation, Value: 0
-Type: MaxApertureValue, Value: 3.5
+Type: MaxApertureValue, Value: 4.8
 Type: MeteringMode, Value: Multi-segment
 Type: LightSource, Value: Unknown
 Type: Flash, Value: No Flash
-Type: FocalLength, Value: 16.0 mm
+Type: FocalLength, Value: 44.0 mm
 Type: MakerNoteVersion, Value: 2.11
 Type: Quality, Value: Fine
 Type: WhiteBalance, Value: Auto
@@ -44,7 +44,7 @@ Type: FocusMode, Value: AF-S
 Type: FlashSetting, Value: 
 Type: FlashType, Value: 
 Type: WhiteBalanceFineTune, Value: 0 0
-Type: WB_RBLevels, Value: 1.92578125 1.484375 1 1
+Type: WB_RBLevels, Value: 2.01953125 1.4296875 1 1
 Type: ProgramShift, Value: 0
 Type: ExposureDifference, Value: 0
 Type: FlashExposureComp, Value: 0
@@ -90,9 +90,9 @@ Type: NoiseReduction, Value: Off
 Type: ColorBalanceVersion, Value: 0219
 Type: LensDataVersion, Value: 0204
 Type: ExitPupilPosition, Value: 102.4 mm
-Type: AFAperture, Value: 3.5
+Type: AFAperture, Value: 4.8
 Type: FocusPosition, Value: 0xff
-Type: FocusDistance, Value: 21.13 m
+Type: FocusDistance, Value: 37.58 m
 Type: LensIDNumber, Value: 234
 Type: LensFStops, Value: 5.33
 Type: MinFocalLength, Value: 16.3 mm
@@ -100,11 +100,11 @@ Type: MaxFocalLength, Value: 302.0 mm
 Type: MaxApertureAtMinFocal, Value: 3.6
 Type: MaxApertureAtMaxFocal, Value: 6.3
 Type: MCUVersion, Value: 223
-Type: EffectiveMaxAperture, Value: 3.6
+Type: EffectiveMaxAperture, Value: 4.8
 Type: DateStampMode, Value: Off
 Type: RetouchHistory, Value: None
-Type: ImageDataSize, Value: 14323417
-Type: ShutterCount, Value: 26132
+Type: ImageDataSize, Value: 13475546
+Type: ShutterCount, Value: 26270
 Type: FlashInfoVersion, Value: 0106
 Type: FlashSource, Value: None
 Type: ExternalFlashFirmware, Value: n/a
@@ -137,14 +137,14 @@ Type: ContrastDetectAFInFocus, Value: No
 Type: FileInfoVersion, Value: 0100
 Type: MemoryCardNumber, Value: 0
 Type: DirectoryNumber, Value: 100
-Type: FileNumber, Value: 5479
+Type: FileNumber, Value: 5614
 Type: RetouchInfoVersion, Value: 0200
 Type: RetouchNEFProcessing, Value: Off
 Type: SilentPhotography, Value: Off
 Type: UserComment, Value: 
-Type: SubSecTime, Value: 40
-Type: SubSecTimeOriginal, Value: 40
-Type: SubSecTimeDigitized, Value: 40
+Type: SubSecTime, Value: 30
+Type: SubSecTimeOriginal, Value: 30
+Type: SubSecTimeDigitized, Value: 30
 Type: FlashpixVersion, Value: 0100
 Type: ColorSpace, Value: sRGB
 Type: ExifImageWidth, Value: 800
@@ -158,7 +158,7 @@ Type: CFAPattern, Value: [Red,Green][Green,Blue]
 Type: CustomRendered, Value: Normal
 Type: ExposureMode, Value: Auto
 Type: DigitalZoomRatio, Value: 1
-Type: FocalLengthIn35mmFormat, Value: 24 mm
+Type: FocalLengthIn35mmFormat, Value: 66 mm
 Type: SceneCaptureType, Value: Standard
 Type: GainControl, Value: None
 Type: Contrast, Value: Normal
@@ -168,7 +168,7 @@ Type: SubjectDistanceRange, Value: Unknown
 Type: GPSVersionID, Value: 2.3.0.0
 Type: Compression, Value: JPEG (old-style)
 Type: ThumbnailOffset, Value: 15356
-Type: ThumbnailLength, Value: 9056
+Type: ThumbnailLength, Value: 11217
 Type: Rating, Value: 0
 Type: ImageWidth, Value: 800
 Type: ImageHeight, Value: 533
@@ -176,23 +176,23 @@ Type: EncodingProcess, Value: Baseline DCT, Huffman coding
 Type: BitsPerSample, Value: 8
 Type: ColorComponents, Value: 3
 Type: YCbCrSubSampling, Value: YCbCr4:2:0 (2 2)
-Type: Aperture, Value: 8
-Type: BlueBalance, Value: 1.484375
+Type: Aperture, Value: 9
+Type: BlueBalance, Value: 1.429688
 Type: ImageSize, Value: 800x533
 Type: Megapixels, Value: 0.426
-Type: RedBalance, Value: 1.925781
+Type: RedBalance, Value: 2.019531
 Type: ScaleFactor35efl, Value: 1.5
-Type: ShutterSpeed, Value: 1/250
-Type: SubSecCreateDate, Value: 2017:07:31 15:01:00.40
-Type: SubSecDateTimeOriginal, Value: 2017:07:31 14:01:00.40
-Type: SubSecModifyDate, Value: 2017:07:31 15:01:00.40
-Type: ThumbnailImage, Value: (Binary data 9056 bytes, use -b option to extract)
+Type: ShutterSpeed, Value: 1/320
+Type: SubSecCreateDate, Value: 2017:08:01 13:09:50.30
+Type: SubSecDateTimeOriginal, Value: 2017:08:01 12:09:50.30
+Type: SubSecModifyDate, Value: 2017:08:01 13:09:50.30
+Type: ThumbnailImage, Value: (Binary data 11217 bytes, use -b option to extract)
 Type: AutoFocus, Value: On
 Type: LensID, Value: Tamron 16-300mm f/3.5-6.3 Di II VC PZD (B016)
 Type: LensSpec, Value: 16-300mm f/3.5-6.3 G VR
 Type: CircleOfConfusion, Value: 0.020 mm
-Type: DOF, Value: inf (1.49 m - inf)
-Type: FOV, Value: 73.7 deg (31.68 m)
-Type: FocalLength35efl, Value: 16.0 mm (35 mm equivalent: 24.0 mm)
-Type: HyperfocalDistance, Value: 1.60 m
-Type: LightValue, Value: 14
+Type: DOF, Value: inf (8.36 m - inf)
+Type: FOV, Value: 30.5 deg (20.48 m)
+Type: FocalLength35efl, Value: 44.0 mm (35 mm equivalent: 66.0 mm)
+Type: HyperfocalDistance, Value: 10.74 m
+Type: LightValue, Value: 14.7
