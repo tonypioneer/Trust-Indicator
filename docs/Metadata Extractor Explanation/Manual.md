@@ -26,6 +26,6 @@ The program offers two output options: full metadata and specified metadata.
 
 4. **Wrapper Testing Results**:
    
-   ![Testing Result](https://github.com/tonypioneer/Trust-Indicator/blob/main/docs/Metadata%20Extractor%20Explanation/4d7187d29f42f86221f47346a14bd37.png)
+   ![Testing Result](https://github.com/tonypioneer/Trust-Indicator/blob/main/docs/Metadata%20Extractor%20Explanation/1.png)
    
 Thank you for using the Metadata Extractor!
