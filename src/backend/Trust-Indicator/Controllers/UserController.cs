@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
-using System.Text;
 using Trust_Indicator.Data;
 using Trust_Indicator.Dtos;
 using Trust_Indicator.Model;
@@ -23,7 +22,11 @@ namespace Trust_Indicator.Controllers
         [HttpPost("login")]
         public ActionResult<bool> ValidLogin(string email, string password)
         {
-            return Ok(_repo.ValidLogin(email, password));
+            if (_repo.ValidLogin(email, password))
+            {
+                return Ok();
+            }
+            return NotFound();
         }
 
         //user/isAdmin/{userId}
@@ -52,21 +55,17 @@ namespace Trust_Indicator.Controllers
 
             if (!results.IsValid)
             {
-                String error = "";
                 foreach (var failure in results.Errors)
-                 
                 {
-                    error += failure.ErrorMessage + "\n";;
                     Console.WriteLine("Property " + failure.PropertyName + " failed validation. Error was: " + failure.ErrorMessage);
-                   
                 }
-                return BadRequest(error.TrimEnd('\n'));
+                return BadRequest();
             }
-            /* 
+
             if (_repo.GetUserByLegalName(user.LegalName) != null)
             {
                 return BadRequest("Person already has an account!");
-            } */
+            }
 
             if (_repo.GetUserByEmail(user.Email) != null)
             {
@@ -94,33 +93,38 @@ namespace Trust_Indicator.Controllers
                 return Ok(user);
             }
         }
-        /* 
+
         private User GetAuthenticatedUser()
         {
             var email = User.FindFirstValue("email");
             return _repo.GetUserByEmail(email);
         }
 
+        [Authorize(AuthenticationSchemes = "MyAuthentication")]
+        [Authorize(Policy = "UserOnly")]
         [HttpPost("changeProfilePhoto")]
-        [Authorize]
-        public ActionResult<UserOutputDto> ChangeProfilePhoto(User user, string photo)
+        public ActionResult<UserOutputDto> ChangeProfilePhoto(string photo)
         {
+            User user = GetAuthenticatedUser();
             return Ok(_repo.ChangeProfilePhoto(user, photo));
         }
 
+        [Authorize(AuthenticationSchemes = "MyAuthentication")]
+        [Authorize(Policy = "UserOnly")]
         [HttpPost("changePassword")]
-        [Authorize]
-        public ActionResult<UserOutputDto> ChangePassword(User user, string password)
+        public ActionResult<UserOutputDto> ChangePassword(string password)
         {
+            User user = GetAuthenticatedUser();
             return Ok(_repo.ChangePassword(user, password));
         }
 
+        [Authorize(AuthenticationSchemes = "MyAuthentication")]
+        [Authorize(Policy = "UserOnly")]
         [HttpPost("changeUserName")]
-        [Authorize]
-        public ActionResult<UserOutputDto> ChangeUserName(User user, string userName)
+        public ActionResult<UserOutputDto> ChangeUserName(string userName)
         {
+            User user = GetAuthenticatedUser();
             return Ok(_repo.ChangeUserName(user, userName));
         }
-        */
-        }
     }
+}

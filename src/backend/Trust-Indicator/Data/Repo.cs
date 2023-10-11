@@ -78,13 +78,12 @@ namespace Trust_Indicator.Data
             User user = _dbContext.Users.First(e => e.UserID == id);
             return user;
         }
-        public UserOutputDto GetUserByEmail(string email)
+        public User GetUserByEmail(string email)
         {
             User user = _dbContext.Users.FirstOrDefault(e => e.Email == email);
             if (user != null)
             {
-                return new UserOutputDto() { UserID = user.UserID, LegalName = user.LegalName, Email = user.Email, UserName = (user.UserName != null || user.UserName != "") ? user.UserName : user.LegalName, ProfilePhotoNO = (user.ProfilePhotoNO != null) ? user.ProfilePhotoNO : "" };
-
+                return user;
             }
             return null;
         }
@@ -118,7 +117,7 @@ namespace Trust_Indicator.Data
         public UserOutputDto ChangePassword(User user, string password)
         {
             User u = _dbContext.Users.FirstOrDefault(e => e.UserID == user.UserID);
-            u.Password = (password != null || password != "" || password.Length < 12 || password.Length >= 6) ? password : u.Password;
+            u.Password = (password != null || password != "" || password.Length < 12 || password.Length >= 6) ? HashPassword(password) : u.Password;
             EntityEntry<User> entry = _dbContext.Users.Update(u);
             User updateUser = entry.Entity;
             _dbContext.SaveChanges();
@@ -126,12 +125,21 @@ namespace Trust_Indicator.Data
         }
         public UserOutputDto ChangeUserName(User user, string userName)
         {
-            User u = _dbContext.Users.FirstOrDefault(e => e.UserID == user.UserID);
-            u.ProfilePhotoNO = (userName != null || userName != "") ? userName : u.UserName;
-            EntityEntry<User> entry = _dbContext.Users.Update(u);
-            User updateUser = entry.Entity;
-            _dbContext.SaveChanges();
-            return new UserOutputDto() { UserID = updateUser.UserID, LegalName = updateUser.LegalName, Email = updateUser.Email, UserName = (updateUser.UserName != null || updateUser.UserName != "") ? updateUser.UserName : updateUser.LegalName, ProfilePhotoNO = (user.ProfilePhotoNO != null) ? updateUser.ProfilePhotoNO : "" };
+            if (_dbContext.Users.FirstOrDefault(e => e.UserName == userName) != null)
+            {
+                return null;
+            }
+            if (user != null)
+            {
+                User u = _dbContext.Users.FirstOrDefault(e => e.Email == user.Email);
+                u.UserName = (userName != null || userName != "") ? userName : u.UserName;
+                EntityEntry<User> entry = _dbContext.Users.Update(u);
+                User updateUser = entry.Entity;
+                _dbContext.SaveChanges();
+                return new UserOutputDto() { UserID = updateUser.UserID, LegalName = updateUser.LegalName, Email = updateUser.Email, UserName = (updateUser.UserName != null || updateUser.UserName != "") ? updateUser.UserName : updateUser.LegalName, ProfilePhotoNO = (user.ProfilePhotoNO != null) ? updateUser.ProfilePhotoNO : "" };
+
+            }
+            return null;
         }
 
         // Image
@@ -184,6 +192,10 @@ namespace Trust_Indicator.Data
                                             UploadDate = e.UploadDate,
                                             Tag = e.Tag,
                                         });
+            if (findImages.Count() == 0)
+            {
+                return null;
+            }
             return findImages;
         }
         public IEnumerable<ImageOutputDto> GetImageByName(string name)
@@ -200,6 +212,10 @@ namespace Trust_Indicator.Data
                                             UploadDate = e.UploadDate,
                                             Tag = e.Tag,
                                         });
+            if (findImages.Count() == 0)
+            {
+                return null;
+            }
             return findImages;
         }
         public IEnumerable<ImageOutputDto> GetImagesByUserName(string userName)
@@ -224,15 +240,20 @@ namespace Trust_Indicator.Data
         public ImageOutputDto GetImageByImageID(int imageId)
         {
             Model.Image image = _dbContext.Images.FirstOrDefault(e => e.ImageID == imageId);
+            if (image == null)
+            {
+                return null;
+            }
             return new ImageOutputDto() { ImageID = image.ImageID, UserID = image.UserID, ImageTitle = image.ImageTitle, ImageUrl = image.ImageUrl, ImageDescription = image.ImageDescription, UploadDate = image.UploadDate, Tag = image.Tag };
         }
         public DateTime GetImageUploadTimeByImageID(int imageId)
         {
             return GetImageByImageID(imageId).UploadDate;
         }
-        public ImageOutputDto UploadImage(Model.Image newImage)
+        public ImageOutputDto UploadImage(ImageInputDto newImage, User user)
         {
-            EntityEntry<Model.Image> entry = _dbContext.Images.Add(newImage);
+            Model.Image image = new Model.Image() { UserID = user.UserID, ImageTitle = newImage.ImageTitle, ImageUrl = newImage.ImageUrl, ImageDescription = newImage.ImageDescription, UploadDate = DateTime.Now, Tag = newImage.Tag };
+            EntityEntry<Model.Image> entry = _dbContext.Images.Add(image);
             Model.Image i = entry.Entity;
             _dbContext.SaveChanges();
             return new ImageOutputDto() { ImageID = i.ImageID, UserID = i.UserID, ImageTitle = i.ImageTitle, ImageUrl = i.ImageUrl, ImageDescription = i.ImageDescription, UploadDate = i.UploadDate, Tag = i.Tag };

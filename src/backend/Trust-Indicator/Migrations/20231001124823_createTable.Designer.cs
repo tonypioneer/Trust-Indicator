@@ -11,14 +11,14 @@ using Trust_Indicator.Data;
 namespace Trust_Indicator.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20230826101844_createTable")]
+    [Migration("20231001124823_createTable")]
     partial class createTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "7.0.10");
+            modelBuilder.HasAnnotation("ProductVersion", "7.0.11");
 
             modelBuilder.Entity("Trust_Indicator.Model.Favorite", b =>
                 {
@@ -29,11 +29,10 @@ namespace Trust_Indicator.Migrations
                     b.Property<string>("Comment")
                         .HasColumnType("TEXT");
 
-                    b.Property<byte[]>("Create_Date")
+                    b.Property<DateTime>("Create_Date")
                         .IsConcurrencyToken()
-                        .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("BLOB");
+                        .HasColumnType("TEXT");
 
                     b.Property<int>("ImageID")
                         .HasColumnType("INTEGER");
@@ -41,7 +40,7 @@ namespace Trust_Indicator.Migrations
                     b.Property<bool>("Is_Favorite")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("Rate")
+                    b.Property<int>("Rate")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("UserID")
@@ -73,11 +72,10 @@ namespace Trust_Indicator.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<byte[]>("UploadDate")
+                    b.Property<DateTime>("UploadDate")
                         .IsConcurrencyToken()
-                        .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("BLOB");
+                        .HasColumnType("TEXT");
 
                     b.Property<int>("UserID")
                         .HasColumnType("INTEGER");
@@ -103,11 +101,10 @@ namespace Trust_Indicator.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<byte[]>("Create_Date")
+                    b.Property<DateTime>("Create_Date")
                         .IsConcurrencyToken()
-                        .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("BLOB");
+                        .HasColumnType("TEXT");
 
                     b.Property<float>("Explosure")
                         .HasColumnType("REAL");
@@ -151,11 +148,10 @@ namespace Trust_Indicator.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<byte[]>("Modify_Date")
+                    b.Property<DateTime>("Modify_Date")
                         .IsConcurrencyToken()
-                        .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("BLOB");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Software")
                         .IsRequired()

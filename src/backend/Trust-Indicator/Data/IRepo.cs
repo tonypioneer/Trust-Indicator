@@ -15,7 +15,7 @@ namespace Trust_Indicator.Data
         IEnumerable<UserOutputDto> GetUserByUsername(string username);
         bool CheckUserName(string username);
         User GetUserByID(int id);
-        UserOutputDto GetUserByEmail(string email);
+        User GetUserByEmail(string email);
         UserOutputDto GetUserByLegalName(string legalName);
         UserOutputDto AddUser(User user);
         UserOutputDto ChangeProfilePhoto(User user, string photo);
@@ -30,7 +30,7 @@ namespace Trust_Indicator.Data
         IEnumerable<ImageOutputDto> GetImagesByUserName(string userName);
         ImageOutputDto GetImageByImageID(int imageId);
         DateTime GetImageUploadTimeByImageID(int imageId);
-        ImageOutputDto UploadImage(Image newImage);
+        ImageOutputDto UploadImage(ImageInputDto newImage, User user);
         ImageOutputDto ChangeDescriptionByImageID(int imageId, string newDescription);
         ImageOutputDto ChangeTitleByImageID(int imageId, string newTitle);
 

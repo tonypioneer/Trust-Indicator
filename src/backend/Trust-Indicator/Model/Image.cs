@@ -11,9 +11,8 @@ namespace Trust_Indicator.Model
         public string ImageTitle { get; set; }
         [Required]
         public string ImageUrl { get; set;}
-        public string? ImageDescription { get; set;}
-        [Timestamp]
         public DateTime UploadDate { get; set; }
         public string Tag { get; set; }
+        public string ImageDescription { get; internal set; }
     }
 }

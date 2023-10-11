@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -18,10 +19,10 @@ namespace Trust_Indicator.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     ImageID = table.Column<int>(type: "INTEGER", nullable: false),
                     UserID = table.Column<int>(type: "INTEGER", nullable: false),
-                    Rate = table.Column<int>(type: "INTEGER", nullable: true),
+                    Rate = table.Column<int>(type: "INTEGER", nullable: false),
                     Is_Favorite = table.Column<bool>(type: "INTEGER", nullable: false),
                     Comment = table.Column<string>(type: "TEXT", nullable: true),
-                    Create_Date = table.Column<byte[]>(type: "BLOB", rowVersion: true, nullable: false)
+                    Create_Date = table.Column<DateTime>(type: "TEXT", rowVersion: true, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -38,7 +39,7 @@ namespace Trust_Indicator.Migrations
                     ImageTitle = table.Column<string>(type: "TEXT", nullable: false),
                     ImageUrl = table.Column<string>(type: "TEXT", nullable: false),
                     ImageDescription = table.Column<string>(type: "TEXT", nullable: true),
-                    UploadDate = table.Column<byte[]>(type: "BLOB", rowVersion: true, nullable: false),
+                    UploadDate = table.Column<DateTime>(type: "TEXT", rowVersion: true, nullable: false),
                     Tag = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
@@ -55,8 +56,8 @@ namespace Trust_Indicator.Migrations
                     File_Size = table.Column<int>(type: "INTEGER", nullable: false),
                     File_Type = table.Column<string>(type: "TEXT", nullable: false),
                     MIME_Type = table.Column<string>(type: "TEXT", nullable: false),
-                    Create_Date = table.Column<byte[]>(type: "BLOB", rowVersion: true, nullable: false),
-                    Modify_Date = table.Column<byte[]>(type: "BLOB", rowVersion: true, nullable: false),
+                    Create_Date = table.Column<DateTime>(type: "TEXT", rowVersion: true, nullable: false),
+                    Modify_Date = table.Column<DateTime>(type: "TEXT", rowVersion: true, nullable: false),
                     Color_Space = table.Column<string>(type: "TEXT", nullable: false),
                     Make = table.Column<string>(type: "TEXT", nullable: false),
                     Model = table.Column<string>(type: "TEXT", nullable: false),
