@@ -12,15 +12,20 @@ The program offers two output options: full metadata and specified metadata.
 
 1. **Full Metadata**: 
     - When the console prompts you, enter `yes` if you wish to print all metadata.
+   
     ![Print Full Metadata 1](https://github.com/tonypioneer/Trust-Indicator/blob/main/docs/Metadata%20Extractor%20Explanation/8862ee6d9291fc3de9fd1a3f7e49ae9.png)
     ![Print Full Metadata 2](https://github.com/tonypioneer/Trust-Indicator/blob/main/docs/Metadata%20Extractor%20Explanation/8445950ae2ec566c69d9fa2a1262ac9.png)
 
 2. **Specified Metadata**:
     - If you choose `no` at the first prompt, the program will ask you to provide the name of the specific metadata type.
     - The program will then search for that value in the metadata list and print the corresponding metadata.
+   
     ![Print Partial Metadata 1](https://github.com/tonypioneer/Trust-Indicator/blob/main/docs/Metadata%20Extractor%20Explanation/eae8e6266df5743ecb11132ed8297c0.png)
+   
     ![Print Partial Metadata 2](https://github.com/tonypioneer/Trust-Indicator/blob/main/docs/Metadata%20Extractor%20Explanation/2850fbe5c3bd88924915808884af12b.png)
 
-3. **Wrapper Testing Results**:
+4. **Wrapper Testing Results**:
+   
    ![Testing Result](https://github.com/tonypioneer/Trust-Indicator/blob/main/docs/Metadata%20Extractor%20Explanation/4d7187d29f42f86221f47346a14bd37.png)
+   
 Thank you for using the Metadata Extractor!
