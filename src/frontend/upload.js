@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function() {
         reader.onloadend = function() {
             dropBox.style.backgroundImage = 'url(' + reader.result + ')';
 
-            dropBox.innerHTML = '<p>This is a preview image</p>';
+            dropBox.innerHTML = '<p>Uploaded Successfully</p>';
         }
         if (file) {
             reader.readAsDataURL(file);
