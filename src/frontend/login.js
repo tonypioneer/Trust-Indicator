@@ -32,19 +32,23 @@ function sign_in(event){
     }
     fetch(`http://tecko.org:5001/user/login?email=${email}&password=${password}`, {
         method: "POST",
+        headers: {
+            'accept': 'text/plain'
+        }
     })
-        .then(response => response.json())
-        .then(data => {
-            if (data) {
+        .then(response => {
+            if (response.status === 200) {
                 sessionStorage.setItem('userEmail', email);
-                window.location.href="index.html";
+                window.location.href = "index.html";
             } else {
-                wrong_prompt.style.display="block";
+                throw new Error(`Server responded with status: ${response.status}`);
             }
         })
         .catch(error => {
-            wrong_prompt.style.display="block";
+            console.error("There was an error:", error);
+            wrong_prompt.style.display = "block";
         });
+
 }
 function sign_up(){
     window.location.href="signup.html"
